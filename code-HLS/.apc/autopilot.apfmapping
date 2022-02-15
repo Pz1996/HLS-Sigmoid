@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="Sigmoid.cpp" path="C:\Users\Sunnyday\AppData\Roaming\Xilinx\Vitis\Sigmoid.cpp"/>
+    <originFiles name="Sigmoid.h" path="C:\Users\Sunnyday\AppData\Roaming\Xilinx\Vitis\Sigmoid.h"/>
+  </source>
+  <testbench>
+    <originFiles name="top.cpp" path="C:\Users\Sunnyday\AppData\Roaming\Xilinx\Vitis\top.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

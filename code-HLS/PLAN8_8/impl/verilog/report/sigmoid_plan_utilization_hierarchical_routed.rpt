@@ -1,0 +1,35 @@
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+----------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2021.1 (win64) Build 3247384 Thu Jun 10 19:36:33 MDT 2021
+| Date         : Mon Dec  6 20:03:37 2021
+| Host         : DESKTOP-B55N7T0 running 64-bit major release  (build 9200)
+| Command      : report_utilization -hierarchical -hierarchical_depth 5 -file ./report/sigmoid_plan_utilization_hierarchical_routed.rpt
+| Design       : bd_0_wrapper
+| Device       : 7k325tffg676-2
+| Design State : Physopt postRoute
+----------------------------------------------------------------------------------------------------------------------------------------
+
+Utilization Design Information
+
+Table of Contents
+-----------------
+1. Utilization by Hierarchy
+
+1. Utilization by Hierarchy
+---------------------------
+
++---------------------------------------------------------+-------------------------------------------------------------+------------+------------+---------+------+-----+--------+--------+------------+
+|                         Instance                        |                            Module                           | Total LUTs | Logic LUTs | LUTRAMs | SRLs | FFs | RAMB36 | RAMB18 | DSP Blocks |
++---------------------------------------------------------+-------------------------------------------------------------+------------+------------+---------+------+-----+--------+--------+------------+
+| bd_0_wrapper                                            |                                                       (top) |         97 |         97 |       0 |    0 |  55 |      0 |      0 |          0 |
+|   bd_0_i                                                |                                                        bd_0 |         97 |         97 |       0 |    0 |  55 |      0 |      0 |          0 |
+|     hls_inst                                            |                                             bd_0_hls_inst_0 |         97 |         97 |       0 |    0 |  55 |      0 |      0 |          0 |
+|       inst                                              |                                bd_0_hls_inst_0_sigmoid_plan |         97 |         97 |       0 |    0 |  55 |      0 |      0 |          0 |
+|         (inst)                                          |                                bd_0_hls_inst_0_sigmoid_plan |         16 |         16 |       0 |    0 |  28 |      0 |      0 |          0 |
+|         dcmp_64ns_64ns_1_2_no_dsp_1_U1                  |    bd_0_hls_inst_0_sigmoid_plan_dcmp_64ns_64ns_1_2_no_dsp_1 |         81 |         81 |       0 |    0 |  27 |      0 |      0 |          0 |
+|           (dcmp_64ns_64ns_1_2_no_dsp_1_U1)              |    bd_0_hls_inst_0_sigmoid_plan_dcmp_64ns_64ns_1_2_no_dsp_1 |         37 |         37 |       0 |    0 |  27 |      0 |      0 |          0 |
+|           sigmoid_plan_dcmp_64ns_64ns_1_2_no_dsp_1_ip_u | bd_0_hls_inst_0_sigmoid_plan_dcmp_64ns_64ns_1_2_no_dsp_1_ip |         44 |         44 |       0 |    0 |   0 |      0 |      0 |          0 |
++---------------------------------------------------------+-------------------------------------------------------------+------------+------------+---------+------+-----+--------+--------+------------+
+* Note: The sum of lower-level cells may be larger than their parent cells total, due to cross-hierarchy LUT combining
+
+

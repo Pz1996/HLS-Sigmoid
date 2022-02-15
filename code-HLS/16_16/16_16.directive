@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AutoPilot:ProjectResources xmlns:AutoPilot="com.autoesl.autopilot.ui.directiveView">
+  <sourceFile>
+    <directive functionName="sigmoid_top" label="" functionLabel="">
+      <pragma name="TOP">
+        <option name="name" value="sigmoid_top"/>
+      </pragma>
+    </directive>
+  </sourceFile>
+</AutoPilot:ProjectResources>

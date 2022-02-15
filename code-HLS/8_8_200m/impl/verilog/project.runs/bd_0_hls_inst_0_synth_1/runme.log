@@ -1,0 +1,248 @@
+
+*** Running vivado
+    with args -log bd_0_hls_inst_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source bd_0_hls_inst_0.tcl
+
+
+
+****** Vivado v2021.1 (64-bit)
+  **** SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+  **** IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+    ** Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+
+source bd_0_hls_inst_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Sunnyday/AppData/Roaming/Xilinx/Vitis/sigmoid_new/8_8_200m/impl/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2021.1/data/ip'.
+WARNING: [IP_Flow 19-4995] The host OS only allows 260 characters in a normal path. The IP cache path is more than 80 characters. If you experience issues with IP caching, please consider changing the IP cache to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. 
+Current IP cache path is c:/Users/Sunnyday/AppData/Roaming/Xilinx/Vitis/sigmoid_new/8_8_200m/impl/verilog/project.cache/ip 
+Command: synth_design -top bd_0_hls_inst_0 -part xc7k325tffg676-2 -directive sdx_optimization_effort_high -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7k325t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7k325t'
+INFO: [Device 21-403] Loading part xc7k325tffg676-2
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 1500
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1135.742 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'bd_0_hls_inst_0' [c:/Users/Sunnyday/AppData/Roaming/Xilinx/Vitis/sigmoid_new/8_8_200m/impl/verilog/project.gen/sources_1/bd/bd_0/ip/bd_0_hls_inst_0/synth/bd_0_hls_inst_0.v:58]
+INFO: [Synth 8-6157] synthesizing module 'sigmoid_top' [c:/Users/Sunnyday/AppData/Roaming/Xilinx/Vitis/sigmoid_new/8_8_200m/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/a148/hdl/verilog/sigmoid_top.v:12]
+INFO: [Synth 8-6157] synthesizing module 'sigmoid_top_ROM_EXP_V' [c:/Users/Sunnyday/AppData/Roaming/Xilinx/Vitis/sigmoid_new/8_8_200m/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/a148/hdl/verilog/sigmoid_top_ROM_EXP_V.v:6]
+INFO: [Synth 8-3876] $readmem data file './sigmoid_top_ROM_EXP_V.dat' is read successfully [c:/Users/Sunnyday/AppData/Roaming/Xilinx/Vitis/sigmoid_new/8_8_200m/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/a148/hdl/verilog/sigmoid_top_ROM_EXP_V.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'sigmoid_top_ROM_EXP_V' (1#1) [c:/Users/Sunnyday/AppData/Roaming/Xilinx/Vitis/sigmoid_new/8_8_200m/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/a148/hdl/verilog/sigmoid_top_ROM_EXP_V.v:6]
+INFO: [Synth 8-6157] synthesizing module 'sigmoid_top_dcmp_64ns_64ns_1_2_no_dsp_1' [c:/Users/Sunnyday/AppData/Roaming/Xilinx/Vitis/sigmoid_new/8_8_200m/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/a148/hdl/verilog/sigmoid_top_dcmp_64ns_64ns_1_2_no_dsp_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'sigmoid_top_dcmp_64ns_64ns_1_2_no_dsp_1_ip' [c:/Users/Sunnyday/AppData/Roaming/Xilinx/Vitis/sigmoid_new/8_8_200m/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/a148/hdl/ip/sigmoid_top_dcmp_64ns_64ns_1_2_no_dsp_1_ip.v:60]
+INFO: [Synth 8-6157] synthesizing module 'LUT1' [C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:59102]
+INFO: [Synth 8-6155] done synthesizing module 'LUT1' (2#1) [C:/Xilinx/Vivado/2021.1/scripts/rt/data/unisim_comp.v:59102]
+INFO: [Synth 8-6155] done synthesizing module 'sigmoid_top_dcmp_64ns_64ns_1_2_no_dsp_1_ip' (14#1) [c:/Users/Sunnyday/AppData/Roaming/Xilinx/Vitis/sigmoid_new/8_8_200m/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/a148/hdl/ip/sigmoid_top_dcmp_64ns_64ns_1_2_no_dsp_1_ip.v:60]
+INFO: [Synth 8-6155] done synthesizing module 'sigmoid_top_dcmp_64ns_64ns_1_2_no_dsp_1' (15#1) [c:/Users/Sunnyday/AppData/Roaming/Xilinx/Vitis/sigmoid_new/8_8_200m/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/a148/hdl/verilog/sigmoid_top_dcmp_64ns_64ns_1_2_no_dsp_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'sigmoid_top_mul_8ns_6ns_13_1_1' [c:/Users/Sunnyday/AppData/Roaming/Xilinx/Vitis/sigmoid_new/8_8_200m/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/a148/hdl/verilog/sigmoid_top_mul_8ns_6ns_13_1_1.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'sigmoid_top_mul_8ns_6ns_13_1_1' (16#1) [c:/Users/Sunnyday/AppData/Roaming/Xilinx/Vitis/sigmoid_new/8_8_200m/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/a148/hdl/verilog/sigmoid_top_mul_8ns_6ns_13_1_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'sigmoid_top_mul_8ns_5ns_10_1_1' [c:/Users/Sunnyday/AppData/Roaming/Xilinx/Vitis/sigmoid_new/8_8_200m/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/a148/hdl/verilog/sigmoid_top_mul_8ns_5ns_10_1_1.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'sigmoid_top_mul_8ns_5ns_10_1_1' (17#1) [c:/Users/Sunnyday/AppData/Roaming/Xilinx/Vitis/sigmoid_new/8_8_200m/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/a148/hdl/verilog/sigmoid_top_mul_8ns_5ns_10_1_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'sigmoid_top_mul_9s_7ns_16_1_1' [c:/Users/Sunnyday/AppData/Roaming/Xilinx/Vitis/sigmoid_new/8_8_200m/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/a148/hdl/verilog/sigmoid_top_mul_9s_7ns_16_1_1.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'sigmoid_top_mul_9s_7ns_16_1_1' (18#1) [c:/Users/Sunnyday/AppData/Roaming/Xilinx/Vitis/sigmoid_new/8_8_200m/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/a148/hdl/verilog/sigmoid_top_mul_9s_7ns_16_1_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'sigmoid_top_mul_8ns_8ns_16_1_1' [c:/Users/Sunnyday/AppData/Roaming/Xilinx/Vitis/sigmoid_new/8_8_200m/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/a148/hdl/verilog/sigmoid_top_mul_8ns_8ns_16_1_1.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'sigmoid_top_mul_8ns_8ns_16_1_1' (19#1) [c:/Users/Sunnyday/AppData/Roaming/Xilinx/Vitis/sigmoid_new/8_8_200m/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/a148/hdl/verilog/sigmoid_top_mul_8ns_8ns_16_1_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'sigmoid_top_mac_mulsub_9s_16ns_19ns_19_4_1' [c:/Users/Sunnyday/AppData/Roaming/Xilinx/Vitis/sigmoid_new/8_8_200m/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/a148/hdl/verilog/sigmoid_top_mac_mulsub_9s_16ns_19ns_19_4_1.v:46]
+INFO: [Synth 8-6157] synthesizing module 'sigmoid_top_mac_mulsub_9s_16ns_19ns_19_4_1_DSP48_0' [c:/Users/Sunnyday/AppData/Roaming/Xilinx/Vitis/sigmoid_new/8_8_200m/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/a148/hdl/verilog/sigmoid_top_mac_mulsub_9s_16ns_19ns_19_4_1.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'sigmoid_top_mac_mulsub_9s_16ns_19ns_19_4_1_DSP48_0' (20#1) [c:/Users/Sunnyday/AppData/Roaming/Xilinx/Vitis/sigmoid_new/8_8_200m/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/a148/hdl/verilog/sigmoid_top_mac_mulsub_9s_16ns_19ns_19_4_1.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'sigmoid_top_mac_mulsub_9s_16ns_19ns_19_4_1' (21#1) [c:/Users/Sunnyday/AppData/Roaming/Xilinx/Vitis/sigmoid_new/8_8_200m/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/a148/hdl/verilog/sigmoid_top_mac_mulsub_9s_16ns_19ns_19_4_1.v:46]
+INFO: [Synth 8-6155] done synthesizing module 'sigmoid_top' (22#1) [c:/Users/Sunnyday/AppData/Roaming/Xilinx/Vitis/sigmoid_new/8_8_200m/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/a148/hdl/verilog/sigmoid_top.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'bd_0_hls_inst_0' (23#1) [c:/Users/Sunnyday/AppData/Roaming/Xilinx/Vitis/sigmoid_new/8_8_200m/impl/verilog/project.gen/sources_1/bd/bd_0/ip/bd_0_hls_inst_0/synth/bd_0_hls_inst_0.v:58]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1135.742 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1135.742 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1135.742 ; gain = 0.000
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.033 . Memory (MB): peak = 1135.742 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 80 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/Sunnyday/AppData/Roaming/Xilinx/Vitis/sigmoid_new/8_8_200m/impl/verilog/project.gen/sources_1/bd/bd_0/ip/bd_0_hls_inst_0/constraints/sigmoid_top_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [c:/Users/Sunnyday/AppData/Roaming/Xilinx/Vitis/sigmoid_new/8_8_200m/impl/verilog/project.gen/sources_1/bd/bd_0/ip/bd_0_hls_inst_0/constraints/sigmoid_top_ooc.xdc] for cell 'inst'
+Parsing XDC File [C:/Users/Sunnyday/AppData/Roaming/Xilinx/Vitis/sigmoid_new/8_8_200m/impl/verilog/project.runs/bd_0_hls_inst_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/Sunnyday/AppData/Roaming/Xilinx/Vitis/sigmoid_new/8_8_200m/impl/verilog/project.runs/bd_0_hls_inst_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1185.402 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.029 . Memory (MB): peak = 1194.586 ; gain = 9.184
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 1194.586 ; gain = 58.844
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7k325tffg676-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 1194.586 ; gain = 58.844
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for inst. (constraint file  C:/Users/Sunnyday/AppData/Roaming/Xilinx/Vitis/sigmoid_new/8_8_200m/impl/verilog/project.runs/bd_0_hls_inst_0_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 1194.586 ; gain = 58.844
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1194.586 ; gain = 58.844
+---------------------------------------------------------------------------------
+INFO: [Synth 8-223] decloning instance 'inst/dcmp_64ns_64ns_1_2_no_dsp_1_U1/sigmoid_top_dcmp_64ns_64ns_1_2_no_dsp_1_ip_u/inst/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized5) to 'inst/dcmp_64ns_64ns_1_2_no_dsp_1_U1/sigmoid_top_dcmp_64ns_64ns_1_2_no_dsp_1_ip_u/inst/i_synth/DELAY_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'inst/dcmp_64ns_64ns_1_2_no_dsp_1_U1/sigmoid_top_dcmp_64ns_64ns_1_2_no_dsp_1_ip_u/inst/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized5) to 'inst/dcmp_64ns_64ns_1_2_no_dsp_1_U1/sigmoid_top_dcmp_64ns_64ns_1_2_no_dsp_1_ip_u/inst/i_synth/DELAY_UNDERFLOW'
+INFO: [Synth 8-223] decloning instance 'inst/dcmp_64ns_64ns_1_2_no_dsp_1_U1/sigmoid_top_dcmp_64ns_64ns_1_2_no_dsp_1_ip_u/inst/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized5) to 'inst/dcmp_64ns_64ns_1_2_no_dsp_1_U1/sigmoid_top_dcmp_64ns_64ns_1_2_no_dsp_1_ip_u/inst/i_synth/DELAY_ACCUM_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'inst/dcmp_64ns_64ns_1_2_no_dsp_1_U1/sigmoid_top_dcmp_64ns_64ns_1_2_no_dsp_1_ip_u/inst/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized5) to 'inst/dcmp_64ns_64ns_1_2_no_dsp_1_U1/sigmoid_top_dcmp_64ns_64ns_1_2_no_dsp_1_ip_u/inst/i_synth/DELAY_ACCUM_INPUT_OVERFLOW'
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 840 (col length:140)
+BRAMs: 890 (col length: RAMB18 140 RAMB36 70)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1194.586 ; gain = 58.844
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 1205.688 ; gain = 69.945
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 1207.148 ; gain = 71.406
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 1235.777 ; gain = 100.035
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 1239.168 ; gain = 103.426
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 1239.168 ; gain = 103.426
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 1239.168 ; gain = 103.426
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 1239.168 ; gain = 103.426
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 1239.168 ; gain = 103.426
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 1239.168 ; gain = 103.426
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+--------+------+
+|      |Cell    |Count |
++------+--------+------+
+|1     |CARRY4  |     1|
+|2     |DSP48E1 |     5|
+|7     |LUT1    |    18|
+|8     |LUT2    |    41|
+|9     |LUT3    |    20|
+|10    |LUT4    |    24|
+|11    |LUT5    |    27|
+|12    |LUT6    |    32|
+|13    |MUXCY   |    80|
+|14    |SRL16E  |    19|
+|15    |FDRE    |   159|
++------+--------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 1239.168 ; gain = 103.426
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:19 ; elapsed = 00:00:30 . Memory (MB): peak = 1239.168 ; gain = 44.582
+Synthesis Optimization Complete : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 1239.168 ; gain = 103.426
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 1239.168 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 86 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1258.887 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 21 instances were transformed.
+  (MUXCY,XORCY) => CARRY4: 21 instances
+
+Synth Design complete, checksum: b9f1a94b
+INFO: [Common 17-83] Releasing license: Synthesis
+48 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:35 ; elapsed = 00:00:37 . Memory (MB): peak = 1258.887 ; gain = 123.145
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Sunnyday/AppData/Roaming/Xilinx/Vitis/sigmoid_new/8_8_200m/impl/verilog/project.runs/bd_0_hls_inst_0_synth_1/bd_0_hls_inst_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP bd_0_hls_inst_0, cache-ID = 1fcf0966c4870d27
+INFO: [Coretcl 2-1174] Renamed 23 cell refs.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Sunnyday/AppData/Roaming/Xilinx/Vitis/sigmoid_new/8_8_200m/impl/verilog/project.runs/bd_0_hls_inst_0_synth_1/bd_0_hls_inst_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file bd_0_hls_inst_0_utilization_synth.rpt -pb bd_0_hls_inst_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Dec  7 16:27:15 2021...

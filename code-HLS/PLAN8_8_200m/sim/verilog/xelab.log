@@ -1,0 +1,79 @@
+Vivado Simulator v2021.1
+Copyright 1986-1999, 2001-2021 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2021.1/bin/unwrapped/win64.o/xelab.exe xil_defaultlib.apatb_sigmoid_plan_top glbl -Oenable_linking_all_libraries -prj sigmoid_plan.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims_ver -L xpm -L floating_point_v7_0_19 -L floating_point_v7_1_12 --lib ieee_proposed=./ieee_proposed -s sigmoid_plan 
+Multi-threading is on. Using 10 slave threads.
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Sunnyday/AppData/Roaming/Xilinx/Vitis/sigmoid_new/PLAN8_8_200m/sim/verilog/ip/xil_defaultlib/sigmoid_plan_dcmp_64ns_64ns_1_2_no_dsp_1_ip.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sigmoid_plan_dcmp_64ns_64ns_1_2_no_dsp_1_ip
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Sunnyday/AppData/Roaming/Xilinx/Vitis/sigmoid_new/PLAN8_8_200m/sim/verilog/glbl.v" into library work
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Sunnyday/AppData/Roaming/Xilinx/Vitis/sigmoid_new/PLAN8_8_200m/sim/verilog/sigmoid_plan.autotb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module apatb_sigmoid_plan_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Sunnyday/AppData/Roaming/Xilinx/Vitis/sigmoid_new/PLAN8_8_200m/sim/verilog/sigmoid_plan.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sigmoid_plan
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Sunnyday/AppData/Roaming/Xilinx/Vitis/sigmoid_new/PLAN8_8_200m/sim/verilog/sigmoid_plan_dcmp_64ns_64ns_1_2_no_dsp_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sigmoid_plan_dcmp_64ns_64ns_1_2_no_dsp_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Sunnyday/AppData/Roaming/Xilinx/Vitis/sigmoid_new/PLAN8_8_200m/sim/verilog/dataflow_monitor.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dataflow_monitor
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package floating_point_v7_1_12.floating_point_v7_1_12_viv_comp
+Compiling package ieee.numeric_std
+Compiling package xbip_utils_v3_0_10.xbip_utils_v3_0_10_pkg
+Compiling package axi_utils_v2_0_6.axi_utils_v2_0_6_pkg
+Compiling package floating_point_v7_1_12.floating_point_v7_1_12_consts
+Compiling package ieee.math_real
+Compiling package floating_point_v7_1_12.floating_point_v7_1_12_exp_table...
+Compiling package mult_gen_v12_0_17.mult_gen_v12_0_17_pkg
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_signed
+Compiling package floating_point_v7_1_12.floating_point_v7_1_12_pkg
+Compiling package floating_point_v7_1_12.flt_utils
+Compiling package unisim.vcomponents
+Compiling package xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv_comp
+Compiling package xil_defaultlib.$unit_dataflow_monitor_sv
+Compiling architecture muxcy_v of entity unisim.MUXCY [muxcy_default]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_12.delay [\delay(width=4,length=0)\]
+Compiling architecture struct of entity floating_point_v7_1_12.carry_chain [\carry_chain(c_xdevicefamily="ki...]
+Compiling architecture synth of entity floating_point_v7_1_12.compare_eq_im [\compare_eq_im(c_xdevicefamily="...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_12.delay [\delay(width=9,length=0)\]
+Compiling architecture struct of entity floating_point_v7_1_12.carry_chain [\carry_chain(c_xdevicefamily="ki...]
+Compiling architecture synth of entity floating_point_v7_1_12.compare_ne_im [\compare_ne_im(c_xdevicefamily="...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_12.delay [\delay(width=2,length=0)\]
+Compiling architecture struct of entity floating_point_v7_1_12.carry_chain [\carry_chain(c_xdevicefamily="ki...]
+Compiling architecture synth of entity floating_point_v7_1_12.compare_eq_im [\compare_eq_im(c_xdevicefamily="...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_12.delay [\delay(width=22,length=0)\]
+Compiling architecture struct of entity floating_point_v7_1_12.carry_chain [\carry_chain(c_xdevicefamily="ki...]
+Compiling architecture synth of entity floating_point_v7_1_12.compare_eq [\compare_eq(c_xdevicefamily="kin...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_12.delay [\delay(width=32,length=0)\]
+Compiling architecture struct of entity floating_point_v7_1_12.carry_chain [\carry_chain(c_xdevicefamily="ki...]
+Compiling architecture synth of entity floating_point_v7_1_12.compare_gt [\compare_gt(c_xdevicefamily="kin...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_12.delay [\delay(width=3,length=0)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_12.delay [\delay(length=0)\]
+Compiling architecture rtl of entity floating_point_v7_1_12.fp_cmp [\fp_cmp(c_xdevicefamily="kintex7...]
+Compiling module unisims_ver.x_lut1_mux2
+Compiling module unisims_ver.LUT1
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture xilinx of entity floating_point_v7_1_12.floating_point_v7_1_12_viv [\floating_point_v7_1_12_viv(c_xd...]
+Compiling architecture xilinx of entity floating_point_v7_1_12.floating_point_v7_1_12 [\floating_point_v7_1_12(c_xdevic...]
+Compiling module xil_defaultlib.sigmoid_plan_dcmp_64ns_64ns_1_2_...
+Compiling module xil_defaultlib.sigmoid_plan_dcmp_64ns_64ns_1_2_...
+Compiling module xil_defaultlib.sigmoid_plan
+Compiling module xil_defaultlib.nodf_module_intf
+Compiling module xil_defaultlib.dataflow_monitor_1
+Compiling module xil_defaultlib.apatb_sigmoid_plan_top
+Compiling module work.glbl
+Built simulation snapshot sigmoid_plan

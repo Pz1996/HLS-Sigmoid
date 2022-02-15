@@ -1,0 +1,9 @@
+INFO: [SIM 2] *************** CSIM start ***************
+INFO: [SIM 4] CSIM will launch GCC as the compiler.
+   Compiling ../../../../top.cpp in debug mode
+   Compiling ../../../../Sigmoid.cpp in debug mode
+   Generating csim.exe
+max error:0.000572 avg err: 0.000086
+*** SIGMOID CAL PASSED ***
+INFO: [SIM 1] CSim done with 0 errors.
+INFO: [SIM 3] *************** CSIM finish ***************

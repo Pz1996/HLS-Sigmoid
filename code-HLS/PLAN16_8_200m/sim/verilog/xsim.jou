@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# xsim v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Tue Dec  7 16:49:39 2021
+# Process ID: 15640
+# Current directory: C:/Users/Sunnyday/AppData/Roaming/Xilinx/Vitis/sigmoid_new/PLAN16_8_200m/sim/verilog
+# Command line: xsim.exe -mode tcl -source {xsim.dir/sigmoid_plan/xsim_script.tcl}
+# Log file: C:/Users/Sunnyday/AppData/Roaming/Xilinx/Vitis/sigmoid_new/PLAN16_8_200m/sim/verilog/xsim.log
+# Journal file: C:/Users/Sunnyday/AppData/Roaming/Xilinx/Vitis/sigmoid_new/PLAN16_8_200m/sim/verilog\xsim.jou
+#-----------------------------------------------------------
+source xsim.dir/sigmoid_plan/xsim_script.tcl
+source sigmoid_plan.tcl

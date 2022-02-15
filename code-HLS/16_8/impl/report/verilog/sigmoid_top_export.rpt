@@ -1,0 +1,24 @@
+
+
+Implementation tool: Xilinx Vivado v.2021.1
+Project:             sigmoid_new
+Solution:            16_8
+Device target:       xc7k325t-ffg676-2
+Report date:         Mon Dec 06 17:09:44 +0800 2021
+
+#=== Post-Implementation Resource usage ===
+SLICE:          103
+LUT:            305
+FF:             180
+DSP:              6
+BRAM:             0
+URAM:             0
+LATCH:            0
+SRL:             21
+CLB:              0
+
+#=== Final timing ===
+CP required:                     10.000
+CP achieved post-synthesis:      3.025
+CP achieved post-implementation: 3.735
+Timing met

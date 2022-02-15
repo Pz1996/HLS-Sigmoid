@@ -1,0 +1,801 @@
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2021.1 (64-bit)
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 5ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7k325t-ffg676-2'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
+INFO: [HLS 200-1464] Running solution command: config_export -vivado_clock=10
+INFO: [HLS 200-1464] Running solution command: config_export -vivado_phys_opt=all
+INFO: [HLS 200-1510] Running: set_part xc7k325t-ffg676-2 
+INFO: [HLS 200-1510] Running: create_clock -period 200MHz -name default 
+INFO: [HLS 200-1510] Running: config_export -format ip_catalog -rtl verilog -vivado_clock 10 -vivado_phys_opt all 
+INFO: [HLS 200-1510] Running: set_directive_top -name sigmoid_plan sigmoid_plan 
+INFO: [HLS 200-1510] Running: csim_design -quiet 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 7.856 seconds; current allocated memory: 127.584 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2021.1 (64-bit)
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 5ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7k325t-ffg676-2'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
+INFO: [HLS 200-1464] Running solution command: config_export -vivado_clock=10
+INFO: [HLS 200-1464] Running solution command: config_export -vivado_phys_opt=all
+INFO: [HLS 200-1510] Running: set_part xc7k325t-ffg676-2 
+INFO: [HLS 200-1510] Running: create_clock -period 200MHz -name default 
+INFO: [HLS 200-1510] Running: config_export -format ip_catalog -rtl verilog -vivado_clock 10 -vivado_phys_opt all 
+INFO: [HLS 200-1510] Running: set_directive_top -name sigmoid_plan sigmoid_plan 
+INFO: [HLS 200-1510] Running: csim_design -quiet 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 3.011 seconds; current allocated memory: 127.561 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2021.1 (64-bit)
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 5ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7k325t-ffg676-2'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
+INFO: [HLS 200-1464] Running solution command: config_export -vivado_clock=10
+INFO: [HLS 200-1464] Running solution command: config_export -vivado_phys_opt=all
+INFO: [HLS 200-1510] Running: set_part xc7k325t-ffg676-2 
+INFO: [HLS 200-1510] Running: create_clock -period 200MHz -name default 
+INFO: [HLS 200-1510] Running: config_export -format ip_catalog -rtl verilog -vivado_clock 10 -vivado_phys_opt all 
+INFO: [HLS 200-1510] Running: set_directive_top -name sigmoid_plan sigmoid_plan 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.058 seconds; current allocated memory: 1018.739 MB.
+INFO: [HLS 200-10] Analyzing design file 'Sigmoid.cpp' ... 
+WARNING: [HLS 207-5301] unused parameter 'print': C:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_int_base.h:792:16
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 7.54 seconds; current allocated memory: 128.827 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 214-279] Initial Interval estimation mode is set into default.
+INFO: [HLS 214-284] Auto array partition mode is set into default.
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator!() const' into 'ap_fixed_base<44, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>& ap_fixed_base<44, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator=<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' (C:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_fixed_base.h:707:9)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<44, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>& ap_fixed_base<44, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator=<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'ap_fixed_base<44, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' (C:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_fixed_base.h:440:5)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<44, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'bool ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>::operator>=<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&) const' (C:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_fixed_base.h:1549:370)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base(int)' into 'bool operator>=<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0> const&, int)' (C:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_fixed_base.h:2274:11183)
+INFO: [HLS 214-131] Inlining function 'bool ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>::operator>=<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&) const' into 'bool operator>=<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0> const&, int)' (C:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_fixed_base.h:2274:11171)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator!() const' into 'ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>& ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>::operator=<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' (C:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_fixed_base.h:707:9)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>& ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>::operator=<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base(int)' (C:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_fixed_base.h:550:146)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base(int)' into 'ap_ufixed<16, 4, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_ufixed(int)' (C:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_fixed.h:338:60)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, false>::ap_int_base(unsigned long)' into 'ap_int_base<16, false>::countLeadingZeros() const' (C:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_int_base.h:1226:30)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<16, false>::countLeadingZeros() const' into 'ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>::to_double() const' (C:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_fixed_base.h:945:17)
+INFO: [HLS 214-131] Inlining function 'rawBitsToDouble(unsigned long long)' into 'ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>::to_double() const' (C:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_fixed_base.h:977:12)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>::to_double() const' into 'ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>::operator>=(double) const' (C:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_fixed_base.h:1560:83)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>::operator<<(unsigned int) const' into 'ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>::operator>>(int) const' (C:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_fixed_base.h:1422:14)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>::operator>>(unsigned int) const' into 'ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>::operator>>(int) const' (C:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_fixed_base.h:1424:14)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<65, true>::ap_int_base<11, false>(ap_int_base<11, false> const&)' into 'ap_int_base<11, false>::RType<64, true>::minus operator-<11, false, 64, true>(ap_int_base<11, false> const&, ap_int_base<64, true> const&)' (C:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_int_base.h:1526:341)
+INFO: [HLS 214-131] Inlining function 'ap_int<65>::ap_int<65, true>(ap_int_base<65, true> const&)' into 'ap_int_base<11, false>::RType<64, true>::minus operator-<11, false, 64, true>(ap_int_base<11, false> const&, ap_int_base<64, true> const&)' (C:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_int_base.h:1526:555)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<65, true>::ap_int_base<64, true>(ap_int_base<64, true> const&)' into 'ap_int_base<11, false>::RType<64, true>::minus operator-<11, false, 64, true>(ap_int_base<11, false> const&, ap_int_base<64, true> const&)' (C:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_int_base.h:1526:430)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<64, true>::ap_int_base(long)' into 'ap_int_base<11, false>::RType<($_0)64, true>::minus operator-<11, false>(ap_int_base<11, false> const&, long)' (C:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_int_base.h:1642:1548)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<11, false>::RType<64, true>::minus operator-<11, false, 64, true>(ap_int_base<11, false> const&, ap_int_base<64, true> const&)' into 'ap_int_base<11, false>::RType<($_0)64, true>::minus operator-<11, false>(ap_int_base<11, false> const&, long)' (C:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_int_base.h:1642:1546)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<55, true>::ap_int_base<1, false>(ap_int_base<1, false> const&)' into 'ap_int_base<1, false>::RType<54, true>::minus operator-<1, false, 54, true>(ap_int_base<1, false> const&, ap_int_base<54, true> const&)' (C:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_int_base.h:1526:341)
+INFO: [HLS 214-131] Inlining function 'ap_int<55>::ap_int<55, true>(ap_int_base<55, true> const&)' into 'ap_int_base<1, false>::RType<54, true>::minus operator-<1, false, 54, true>(ap_int_base<1, false> const&, ap_int_base<54, true> const&)' (C:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_int_base.h:1526:555)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<55, true>::ap_int_base<54, true>(ap_int_base<54, true> const&)' into 'ap_int_base<1, false>::RType<54, true>::minus operator-<1, false, 54, true>(ap_int_base<1, false> const&, ap_int_base<54, true> const&)' (C:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_int_base.h:1526:430)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<1, false>::ap_int_base(int)' into 'ap_int_base<54, true>::operator-() const' (C:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_int_base.h:925:12)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<1, false>::RType<54, true>::minus operator-<1, false, 54, true>(ap_int_base<1, false> const&, ap_int_base<54, true> const&)' into 'ap_int_base<54, true>::operator-() const' (C:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_int_base.h:925:37)
+INFO: [HLS 214-131] Inlining function 'doubleToRawBits(double)' into 'ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base(double)' (C:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_fixed_base.h:565:14)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<54, true>& ap_int_base<54, true>::operator=<55, true>(ap_int_base<55, true> const&)' into 'ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base(double)' (C:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_fixed_base.h:579:20)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<54, true>::operator-() const' into 'ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base(double)' (C:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_fixed_base.h:579:22)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<12, true>& ap_int_base<12, true>::operator=<65, true>(ap_int_base<65, true> const&)' into 'ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base(double)' (C:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_fixed_base.h:572:9)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<11, false>::RType<($_0)64, true>::minus operator-<11, false>(ap_int_base<11, false> const&, long)' into 'ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base(double)' (C:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_fixed_base.h:572:19)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>::operator!() const' into 'ap_fixed_base<17, 5, false, (ap_q_mode)5, (ap_o_mode)3, 0>& ap_fixed_base<17, 5, false, (ap_q_mode)5, (ap_o_mode)3, 0>::operator=<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' (C:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_fixed_base.h:707:9)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<17, 5, false, (ap_q_mode)5, (ap_o_mode)3, 0>& ap_fixed_base<17, 5, false, (ap_q_mode)5, (ap_o_mode)3, 0>::operator=<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'ap_fixed_base<17, 5, false, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' (C:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_fixed_base.h:440:5)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<17, 5, false, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>::RType<16, 4, false>::plus ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>::operator+<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0> const&) const' (C:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_fixed_base.h:1245:330)
+INFO: [HLS 214-131] Inlining function 'ap_ufixed<17, 5, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_ufixed<17, 5, false, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<17, 5, false, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>::RType<16, 4, false>::plus ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>::operator+<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0> const&) const' (C:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_fixed_base.h:1245:382)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<17, 5, false, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>::RType<16, 4, false>::plus ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>::operator+<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0> const&) const' (C:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_fixed_base.h:1245:342)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<17, 5, false, (ap_q_mode)5, (ap_o_mode)3, 0>::operator!() const' into 'ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>& ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>::operator=<17, 5, false, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<17, 5, false, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' (C:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_fixed_base.h:707:9)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>& ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>::operator=<17, 5, false, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<17, 5, false, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base<17, 5, false, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<17, 5, false, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' (C:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_fixed_base.h:440:5)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base<17, 5, false, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<17, 5, false, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'ap_ufixed<16, 4, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_ufixed<17, 5, false, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<17, 5, false, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' (C:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_fixed.h:239:9)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>::operator!() const' into 'ap_fixed_base<16, 1, false, (ap_q_mode)5, (ap_o_mode)3, 0>& ap_fixed_base<16, 1, false, (ap_q_mode)5, (ap_o_mode)3, 0>::operator=<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' (C:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_fixed_base.h:707:9)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<16, 1, false, (ap_q_mode)5, (ap_o_mode)3, 0>& ap_fixed_base<16, 1, false, (ap_q_mode)5, (ap_o_mode)3, 0>::operator=<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'ap_fixed_base<16, 1, false, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' (C:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_fixed_base.h:440:5)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<16, 1, false, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'ap_ufixed<16, 1, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_ufixed<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' (C:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_fixed.h:239:9)
+INFO: [HLS 214-131] Inlining function 'bool operator>=<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0> const&, int)' into 'sigmoid_plan(ap_ufixed<16, 4, (ap_q_mode)5, (ap_o_mode)3, 0>)' (Sigmoid.cpp:45:8)
+INFO: [HLS 214-131] Inlining function 'ap_ufixed<16, 1, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_ufixed<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'sigmoid_plan(ap_ufixed<16, 4, (ap_q_mode)5, (ap_o_mode)3, 0>)' (Sigmoid.cpp:50:9)
+INFO: [HLS 214-131] Inlining function 'ap_ufixed<16, 4, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_ufixed<17, 5, false, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<17, 5, false, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'sigmoid_plan(ap_ufixed<16, 4, (ap_q_mode)5, (ap_o_mode)3, 0>)' (Sigmoid.cpp:48:12)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>::RType<16, 4, false>::plus ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>::operator+<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0> const&) const' into 'sigmoid_plan(ap_ufixed<16, 4, (ap_q_mode)5, (ap_o_mode)3, 0>)' (Sigmoid.cpp:48:25)
+INFO: [HLS 214-131] Inlining function 'ap_ufixed<16, 4, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_ufixed(double)' into 'sigmoid_plan(ap_ufixed<16, 4, (ap_q_mode)5, (ap_o_mode)3, 0>)' (Sigmoid.cpp:48:27)
+INFO: [HLS 214-131] Inlining function 'ap_ufixed<16, 4, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_ufixed(int)' into 'sigmoid_plan(ap_ufixed<16, 4, (ap_q_mode)5, (ap_o_mode)3, 0>)' (Sigmoid.cpp:45:19)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>::operator>>(int) const' into 'sigmoid_plan(ap_ufixed<16, 4, (ap_q_mode)5, (ap_o_mode)3, 0>)' (Sigmoid.cpp:48:19)
+INFO: [HLS 214-131] Inlining function 'ap_ufixed<16, 4, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_ufixed<17, 5, false, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<17, 5, false, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'sigmoid_plan(ap_ufixed<16, 4, (ap_q_mode)5, (ap_o_mode)3, 0>)' (Sigmoid.cpp:47:24)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>::RType<16, 4, false>::plus ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>::operator+<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0> const&) const' into 'sigmoid_plan(ap_ufixed<16, 4, (ap_q_mode)5, (ap_o_mode)3, 0>)' (Sigmoid.cpp:47:37)
+INFO: [HLS 214-131] Inlining function 'ap_ufixed<16, 4, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_ufixed(double)' into 'sigmoid_plan(ap_ufixed<16, 4, (ap_q_mode)5, (ap_o_mode)3, 0>)' (Sigmoid.cpp:47:38)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>::operator>=(double) const' into 'sigmoid_plan(ap_ufixed<16, 4, (ap_q_mode)5, (ap_o_mode)3, 0>)' (Sigmoid.cpp:46:13)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>::operator>>(int) const' into 'sigmoid_plan(ap_ufixed<16, 4, (ap_q_mode)5, (ap_o_mode)3, 0>)' (Sigmoid.cpp:47:31)
+INFO: [HLS 214-131] Inlining function 'bool operator>=<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0> const&, int)' into 'sigmoid_plan(ap_ufixed<16, 4, (ap_q_mode)5, (ap_o_mode)3, 0>)' (Sigmoid.cpp:47:13)
+INFO: [HLS 214-131] Inlining function 'ap_ufixed<16, 4, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_ufixed<17, 5, false, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<17, 5, false, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'sigmoid_plan(ap_ufixed<16, 4, (ap_q_mode)5, (ap_o_mode)3, 0>)' (Sigmoid.cpp:46:28)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>::RType<16, 4, false>::plus ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>::operator+<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0> const&) const' into 'sigmoid_plan(ap_ufixed<16, 4, (ap_q_mode)5, (ap_o_mode)3, 0>)' (Sigmoid.cpp:46:41)
+INFO: [HLS 214-131] Inlining function 'ap_ufixed<16, 4, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_ufixed(double)' into 'sigmoid_plan(ap_ufixed<16, 4, (ap_q_mode)5, (ap_o_mode)3, 0>)' (Sigmoid.cpp:46:43)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>::operator>>(int) const' into 'sigmoid_plan(ap_ufixed<16, 4, (ap_q_mode)5, (ap_o_mode)3, 0>)' (Sigmoid.cpp:46:35)
+WARNING: [HLS 214-281] Estimating pipelined function 'sigmoid_plan' with estimated II increased from II=1 to II=+infinity because of sub function call 'call' (Sigmoid.cpp:38:0)
+INFO: [HLS 214-270] Starting automatic array partition analysis...
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.none.i16.s_struct.ap_ufixeds' into 'sigmoid_plan(ap_ufixed<16, 4, (ap_q_mode)5, (ap_o_mode)3, 0>)' (Sigmoid.cpp:50:2)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 5.06 seconds; current allocated memory: 131.097 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.025 seconds; current allocated memory: 131.098 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.142 seconds; current allocated memory: 147.542 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+WARNING: [SYNCHK 200-23] C:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_fixed_base.h:950: variable-indexed range selection may cause suboptimal QoR.
+INFO: [SYNCHK 200-10] 0 error(s), 1 warning(s).
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.268 seconds; current allocated memory: 171.798 MB.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock to (Sigmoid.cpp:50:2) in function 'sigmoid_plan'... converting 15 basic blocks.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.277 seconds; current allocated memory: 218.210 MB.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.173 seconds; current allocated memory: 222.022 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'sigmoid_plan' ...
+WARNING: [SYN 201-107] Renaming port name 'sigmoid_plan/in' to 'sigmoid_plan/in_r' to avoid the conflict with HDL keywords or other object names.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'sigmoid_plan' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining function 'sigmoid_plan'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 7, function 'sigmoid_plan'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.221 seconds; current allocated memory: 222.382 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.16 seconds; current allocated memory: 222.738 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'sigmoid_plan' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'sigmoid_plan/in_r' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'sigmoid_plan' to 'ap_ctrl_hs'.
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'sigmoid_plan' pipeline 'sigmoid_plan' pipeline type 'function pipeline'
+INFO: [RTGEN 206-100] Generating core module 'dcmp_64ns_64ns_1_2_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'sigmoid_plan'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 1 seconds. Elapsed time: 0.23 seconds; current allocated memory: 223.512 MB.
+INFO: [HLS 200-503] Applying 'config_export -vivado_clock 10', using 10 ns in generated Vivado XDC
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.881 seconds; current allocated memory: 226.188 MB.
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.329 seconds; current allocated memory: 229.436 MB.
+INFO: [VHDL 208-304] Generating VHDL RTL for sigmoid_plan.
+INFO: [VLOG 209-307] Generating Verilog RTL for sigmoid_plan.
+INFO: [HLS 200-789] **** Estimated Fmax: 281.48 MHz
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 4 seconds. CPU system time: 1 seconds. Elapsed time: 15.433 seconds; current allocated memory: 229.422 MB.
+INFO: [HLS 200-112] Total CPU user time: 6 seconds. Total CPU system time: 2 seconds. Total elapsed time: 17.281 seconds; peak allocated memory: 1018.739 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2021.1 (64-bit)
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 5ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7k325t-ffg676-2'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
+INFO: [HLS 200-1464] Running solution command: config_export -vivado_clock=10
+INFO: [HLS 200-1464] Running solution command: config_export -vivado_phys_opt=all
+INFO: [HLS 200-1510] Running: set_part xc7k325t-ffg676-2 
+INFO: [HLS 200-1510] Running: create_clock -period 200MHz -name default 
+INFO: [HLS 200-1510] Running: config_export -format ip_catalog -rtl verilog -vivado_clock 10 -vivado_phys_opt all 
+INFO: [HLS 200-1510] Running: set_directive_top -name sigmoid_plan sigmoid_plan 
+INFO: [HLS 200-1510] Running: csim_design -quiet 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 5.125 seconds; current allocated memory: 127.592 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2021.1 (64-bit)
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 5ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7k325t-ffg676-2'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
+INFO: [HLS 200-1464] Running solution command: config_export -vivado_clock=10
+INFO: [HLS 200-1464] Running solution command: config_export -vivado_phys_opt=all
+INFO: [HLS 200-1510] Running: set_part xc7k325t-ffg676-2 
+INFO: [HLS 200-1510] Running: create_clock -period 200MHz -name default 
+INFO: [HLS 200-1510] Running: config_export -format ip_catalog -rtl verilog -vivado_clock 10 -vivado_phys_opt all 
+INFO: [HLS 200-1510] Running: set_directive_top -name sigmoid_plan sigmoid_plan 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.041 seconds; current allocated memory: 1018.739 MB.
+INFO: [HLS 200-10] Analyzing design file 'Sigmoid.cpp' ... 
+WARNING: [HLS 207-5301] unused parameter 'print': C:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_int_base.h:792:16
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 6.324 seconds; current allocated memory: 128.827 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 214-279] Initial Interval estimation mode is set into default.
+INFO: [HLS 214-284] Auto array partition mode is set into default.
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator!() const' into 'ap_fixed_base<44, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>& ap_fixed_base<44, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator=<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' (C:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_fixed_base.h:707:9)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<44, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>& ap_fixed_base<44, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator=<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'ap_fixed_base<44, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' (C:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_fixed_base.h:440:5)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<44, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'bool ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>::operator>=<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&) const' (C:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_fixed_base.h:1549:370)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base(int)' into 'bool operator>=<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0> const&, int)' (C:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_fixed_base.h:2274:11183)
+INFO: [HLS 214-131] Inlining function 'bool ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>::operator>=<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&) const' into 'bool operator>=<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0> const&, int)' (C:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_fixed_base.h:2274:11171)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator!() const' into 'ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>& ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>::operator=<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' (C:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_fixed_base.h:707:9)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>& ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>::operator=<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base(int)' (C:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_fixed_base.h:550:146)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base(int)' into 'ap_ufixed<16, 4, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_ufixed(int)' (C:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_fixed.h:338:60)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, false>::ap_int_base(unsigned long)' into 'ap_int_base<16, false>::countLeadingZeros() const' (C:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_int_base.h:1226:30)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<16, false>::countLeadingZeros() const' into 'ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>::to_double() const' (C:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_fixed_base.h:945:17)
+INFO: [HLS 214-131] Inlining function 'rawBitsToDouble(unsigned long long)' into 'ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>::to_double() const' (C:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_fixed_base.h:977:12)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>::to_double() const' into 'ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>::operator>=(double) const' (C:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_fixed_base.h:1560:83)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>::operator<<(unsigned int) const' into 'ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>::operator>>(int) const' (C:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_fixed_base.h:1422:14)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>::operator>>(unsigned int) const' into 'ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>::operator>>(int) const' (C:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_fixed_base.h:1424:14)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<65, true>::ap_int_base<11, false>(ap_int_base<11, false> const&)' into 'ap_int_base<11, false>::RType<64, true>::minus operator-<11, false, 64, true>(ap_int_base<11, false> const&, ap_int_base<64, true> const&)' (C:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_int_base.h:1526:341)
+INFO: [HLS 214-131] Inlining function 'ap_int<65>::ap_int<65, true>(ap_int_base<65, true> const&)' into 'ap_int_base<11, false>::RType<64, true>::minus operator-<11, false, 64, true>(ap_int_base<11, false> const&, ap_int_base<64, true> const&)' (C:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_int_base.h:1526:555)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<65, true>::ap_int_base<64, true>(ap_int_base<64, true> const&)' into 'ap_int_base<11, false>::RType<64, true>::minus operator-<11, false, 64, true>(ap_int_base<11, false> const&, ap_int_base<64, true> const&)' (C:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_int_base.h:1526:430)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<64, true>::ap_int_base(long)' into 'ap_int_base<11, false>::RType<($_0)64, true>::minus operator-<11, false>(ap_int_base<11, false> const&, long)' (C:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_int_base.h:1642:1548)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<11, false>::RType<64, true>::minus operator-<11, false, 64, true>(ap_int_base<11, false> const&, ap_int_base<64, true> const&)' into 'ap_int_base<11, false>::RType<($_0)64, true>::minus operator-<11, false>(ap_int_base<11, false> const&, long)' (C:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_int_base.h:1642:1546)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<55, true>::ap_int_base<1, false>(ap_int_base<1, false> const&)' into 'ap_int_base<1, false>::RType<54, true>::minus operator-<1, false, 54, true>(ap_int_base<1, false> const&, ap_int_base<54, true> const&)' (C:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_int_base.h:1526:341)
+INFO: [HLS 214-131] Inlining function 'ap_int<55>::ap_int<55, true>(ap_int_base<55, true> const&)' into 'ap_int_base<1, false>::RType<54, true>::minus operator-<1, false, 54, true>(ap_int_base<1, false> const&, ap_int_base<54, true> const&)' (C:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_int_base.h:1526:555)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<55, true>::ap_int_base<54, true>(ap_int_base<54, true> const&)' into 'ap_int_base<1, false>::RType<54, true>::minus operator-<1, false, 54, true>(ap_int_base<1, false> const&, ap_int_base<54, true> const&)' (C:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_int_base.h:1526:430)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<1, false>::ap_int_base(int)' into 'ap_int_base<54, true>::operator-() const' (C:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_int_base.h:925:12)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<1, false>::RType<54, true>::minus operator-<1, false, 54, true>(ap_int_base<1, false> const&, ap_int_base<54, true> const&)' into 'ap_int_base<54, true>::operator-() const' (C:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_int_base.h:925:37)
+INFO: [HLS 214-131] Inlining function 'doubleToRawBits(double)' into 'ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base(double)' (C:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_fixed_base.h:565:14)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<54, true>& ap_int_base<54, true>::operator=<55, true>(ap_int_base<55, true> const&)' into 'ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base(double)' (C:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_fixed_base.h:579:20)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<54, true>::operator-() const' into 'ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base(double)' (C:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_fixed_base.h:579:22)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<12, true>& ap_int_base<12, true>::operator=<65, true>(ap_int_base<65, true> const&)' into 'ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base(double)' (C:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_fixed_base.h:572:9)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<11, false>::RType<($_0)64, true>::minus operator-<11, false>(ap_int_base<11, false> const&, long)' into 'ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base(double)' (C:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_fixed_base.h:572:19)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>::operator!() const' into 'ap_fixed_base<17, 5, false, (ap_q_mode)5, (ap_o_mode)3, 0>& ap_fixed_base<17, 5, false, (ap_q_mode)5, (ap_o_mode)3, 0>::operator=<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' (C:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_fixed_base.h:707:9)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<17, 5, false, (ap_q_mode)5, (ap_o_mode)3, 0>& ap_fixed_base<17, 5, false, (ap_q_mode)5, (ap_o_mode)3, 0>::operator=<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'ap_fixed_base<17, 5, false, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' (C:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_fixed_base.h:440:5)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<17, 5, false, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>::RType<16, 4, false>::plus ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>::operator+<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0> const&) const' (C:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_fixed_base.h:1245:330)
+INFO: [HLS 214-131] Inlining function 'ap_ufixed<17, 5, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_ufixed<17, 5, false, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<17, 5, false, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>::RType<16, 4, false>::plus ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>::operator+<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0> const&) const' (C:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_fixed_base.h:1245:382)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<17, 5, false, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>::RType<16, 4, false>::plus ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>::operator+<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0> const&) const' (C:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_fixed_base.h:1245:342)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<17, 5, false, (ap_q_mode)5, (ap_o_mode)3, 0>::operator!() const' into 'ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>& ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>::operator=<17, 5, false, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<17, 5, false, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' (C:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_fixed_base.h:707:9)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>& ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>::operator=<17, 5, false, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<17, 5, false, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base<17, 5, false, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<17, 5, false, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' (C:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_fixed_base.h:440:5)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base<17, 5, false, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<17, 5, false, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'ap_ufixed<16, 4, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_ufixed<17, 5, false, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<17, 5, false, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' (C:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_fixed.h:239:9)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>::operator!() const' into 'ap_fixed_base<16, 1, false, (ap_q_mode)5, (ap_o_mode)3, 0>& ap_fixed_base<16, 1, false, (ap_q_mode)5, (ap_o_mode)3, 0>::operator=<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' (C:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_fixed_base.h:707:9)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<16, 1, false, (ap_q_mode)5, (ap_o_mode)3, 0>& ap_fixed_base<16, 1, false, (ap_q_mode)5, (ap_o_mode)3, 0>::operator=<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'ap_fixed_base<16, 1, false, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' (C:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_fixed_base.h:440:5)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<16, 1, false, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'ap_ufixed<16, 1, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_ufixed<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' (C:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_fixed.h:239:9)
+INFO: [HLS 214-131] Inlining function 'bool operator>=<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0> const&, int)' into 'sigmoid_plan(ap_ufixed<16, 4, (ap_q_mode)5, (ap_o_mode)3, 0>)' (Sigmoid.cpp:51:8)
+INFO: [HLS 214-131] Inlining function 'ap_ufixed<16, 1, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_ufixed<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'sigmoid_plan(ap_ufixed<16, 4, (ap_q_mode)5, (ap_o_mode)3, 0>)' (Sigmoid.cpp:56:9)
+INFO: [HLS 214-131] Inlining function 'ap_ufixed<16, 4, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_ufixed<17, 5, false, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<17, 5, false, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'sigmoid_plan(ap_ufixed<16, 4, (ap_q_mode)5, (ap_o_mode)3, 0>)' (Sigmoid.cpp:54:12)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>::RType<16, 4, false>::plus ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>::operator+<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0> const&) const' into 'sigmoid_plan(ap_ufixed<16, 4, (ap_q_mode)5, (ap_o_mode)3, 0>)' (Sigmoid.cpp:54:22)
+INFO: [HLS 214-131] Inlining function 'ap_ufixed<16, 4, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_ufixed(double)' into 'sigmoid_plan(ap_ufixed<16, 4, (ap_q_mode)5, (ap_o_mode)3, 0>)' (Sigmoid.cpp:54:24)
+INFO: [HLS 214-131] Inlining function 'ap_ufixed<16, 4, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_ufixed(int)' into 'sigmoid_plan(ap_ufixed<16, 4, (ap_q_mode)5, (ap_o_mode)3, 0>)' (Sigmoid.cpp:51:19)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>::operator>>(int) const' into 'sigmoid_plan(ap_ufixed<16, 4, (ap_q_mode)5, (ap_o_mode)3, 0>)' (Sigmoid.cpp:54:16)
+INFO: [HLS 214-131] Inlining function 'ap_ufixed<16, 4, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_ufixed<17, 5, false, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<17, 5, false, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'sigmoid_plan(ap_ufixed<16, 4, (ap_q_mode)5, (ap_o_mode)3, 0>)' (Sigmoid.cpp:53:24)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>::RType<16, 4, false>::plus ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>::operator+<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0> const&) const' into 'sigmoid_plan(ap_ufixed<16, 4, (ap_q_mode)5, (ap_o_mode)3, 0>)' (Sigmoid.cpp:53:34)
+INFO: [HLS 214-131] Inlining function 'ap_ufixed<16, 4, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_ufixed(double)' into 'sigmoid_plan(ap_ufixed<16, 4, (ap_q_mode)5, (ap_o_mode)3, 0>)' (Sigmoid.cpp:53:35)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>::operator>=(double) const' into 'sigmoid_plan(ap_ufixed<16, 4, (ap_q_mode)5, (ap_o_mode)3, 0>)' (Sigmoid.cpp:52:13)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>::operator>>(int) const' into 'sigmoid_plan(ap_ufixed<16, 4, (ap_q_mode)5, (ap_o_mode)3, 0>)' (Sigmoid.cpp:53:28)
+INFO: [HLS 214-131] Inlining function 'bool operator>=<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0> const&, int)' into 'sigmoid_plan(ap_ufixed<16, 4, (ap_q_mode)5, (ap_o_mode)3, 0>)' (Sigmoid.cpp:53:13)
+INFO: [HLS 214-131] Inlining function 'ap_ufixed<16, 4, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_ufixed<17, 5, false, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<17, 5, false, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'sigmoid_plan(ap_ufixed<16, 4, (ap_q_mode)5, (ap_o_mode)3, 0>)' (Sigmoid.cpp:52:28)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>::RType<16, 4, false>::plus ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>::operator+<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0> const&) const' into 'sigmoid_plan(ap_ufixed<16, 4, (ap_q_mode)5, (ap_o_mode)3, 0>)' (Sigmoid.cpp:52:38)
+INFO: [HLS 214-131] Inlining function 'ap_ufixed<16, 4, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_ufixed(double)' into 'sigmoid_plan(ap_ufixed<16, 4, (ap_q_mode)5, (ap_o_mode)3, 0>)' (Sigmoid.cpp:52:40)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>::operator>>(int) const' into 'sigmoid_plan(ap_ufixed<16, 4, (ap_q_mode)5, (ap_o_mode)3, 0>)' (Sigmoid.cpp:52:32)
+WARNING: [HLS 214-281] Estimating pipelined function 'sigmoid_plan' with estimated II increased from II=1 to II=+infinity because of sub function call 'call' (Sigmoid.cpp:38:0)
+INFO: [HLS 214-270] Starting automatic array partition analysis...
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.none.i16.s_struct.ap_ufixeds' into 'sigmoid_plan(ap_ufixed<16, 4, (ap_q_mode)5, (ap_o_mode)3, 0>)' (Sigmoid.cpp:56:2)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 4.399 seconds; current allocated memory: 131.097 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.025 seconds; current allocated memory: 131.098 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.118 seconds; current allocated memory: 147.541 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+WARNING: [SYNCHK 200-23] C:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_fixed_base.h:950: variable-indexed range selection may cause suboptimal QoR.
+INFO: [SYNCHK 200-10] 0 error(s), 1 warning(s).
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.224 seconds; current allocated memory: 171.795 MB.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock to (Sigmoid.cpp:56:2) in function 'sigmoid_plan'... converting 15 basic blocks.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.301 seconds; current allocated memory: 218.205 MB.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.147 seconds; current allocated memory: 222.016 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'sigmoid_plan' ...
+WARNING: [SYN 201-107] Renaming port name 'sigmoid_plan/in' to 'sigmoid_plan/in_r' to avoid the conflict with HDL keywords or other object names.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'sigmoid_plan' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining function 'sigmoid_plan'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 7, function 'sigmoid_plan'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.189 seconds; current allocated memory: 222.376 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.145 seconds; current allocated memory: 222.732 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'sigmoid_plan' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'sigmoid_plan/in_r' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'sigmoid_plan' to 'ap_ctrl_hs'.
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'sigmoid_plan' pipeline 'sigmoid_plan' pipeline type 'function pipeline'
+INFO: [RTGEN 206-100] Generating core module 'dcmp_64ns_64ns_1_2_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'sigmoid_plan'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.227 seconds; current allocated memory: 223.506 MB.
+INFO: [HLS 200-503] Applying 'config_export -vivado_clock 10', using 10 ns in generated Vivado XDC
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.891 seconds; current allocated memory: 226.197 MB.
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.318 seconds; current allocated memory: 229.461 MB.
+INFO: [VHDL 208-304] Generating VHDL RTL for sigmoid_plan.
+INFO: [VLOG 209-307] Generating Verilog RTL for sigmoid_plan.
+INFO: [HLS 200-789] **** Estimated Fmax: 281.48 MHz
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 3 seconds. CPU system time: 0 seconds. Elapsed time: 13.416 seconds; current allocated memory: 229.447 MB.
+INFO: [HLS 200-112] Total CPU user time: 5 seconds. Total CPU system time: 1 seconds. Total elapsed time: 14.921 seconds; peak allocated memory: 1018.739 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2021.1 (64-bit)
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 3.479ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7k325t-ffg676-2'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_export -vivado_clock=10
+INFO: [HLS 200-1464] Running solution command: config_export -vivado_phys_opt=all
+INFO: [HLS 200-1510] Running: set_part xc7k325t-ffg676-2 
+INFO: [HLS 200-1510] Running: create_clock -period 287.48MHz -name default 
+INFO: [HLS 200-1510] Running: config_export -vivado_clock 10 -vivado_phys_opt all 
+INFO: [HLS 200-1510] Running: set_directive_top -name sigmoid_plan sigmoid_plan 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.044 seconds; current allocated memory: 1018.678 MB.
+INFO: [HLS 200-10] Analyzing design file 'Sigmoid.cpp' ... 
+WARNING: [HLS 207-5301] unused parameter 'print': C:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_int_base.h:792:16
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 6.223 seconds; current allocated memory: 128.840 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 214-279] Initial Interval estimation mode is set into default.
+INFO: [HLS 214-284] Auto array partition mode is set into default.
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator!() const' into 'ap_fixed_base<44, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>& ap_fixed_base<44, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator=<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' (C:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_fixed_base.h:707:9)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<44, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>& ap_fixed_base<44, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator=<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'ap_fixed_base<44, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' (C:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_fixed_base.h:440:5)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<44, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'bool ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>::operator>=<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&) const' (C:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_fixed_base.h:1549:370)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base(int)' into 'bool operator>=<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0> const&, int)' (C:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_fixed_base.h:2274:11183)
+INFO: [HLS 214-131] Inlining function 'bool ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>::operator>=<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&) const' into 'bool operator>=<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0> const&, int)' (C:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_fixed_base.h:2274:11171)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator!() const' into 'ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>& ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>::operator=<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' (C:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_fixed_base.h:707:9)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>& ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>::operator=<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base(int)' (C:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_fixed_base.h:550:146)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base(int)' into 'ap_ufixed<16, 4, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_ufixed(int)' (C:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_fixed.h:338:60)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, false>::ap_int_base(unsigned long)' into 'ap_int_base<16, false>::countLeadingZeros() const' (C:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_int_base.h:1226:30)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<16, false>::countLeadingZeros() const' into 'ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>::to_double() const' (C:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_fixed_base.h:945:17)
+INFO: [HLS 214-131] Inlining function 'rawBitsToDouble(unsigned long long)' into 'ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>::to_double() const' (C:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_fixed_base.h:977:12)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>::to_double() const' into 'ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>::operator>=(double) const' (C:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_fixed_base.h:1560:83)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>::operator<<(unsigned int) const' into 'ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>::operator>>(int) const' (C:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_fixed_base.h:1422:14)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>::operator>>(unsigned int) const' into 'ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>::operator>>(int) const' (C:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_fixed_base.h:1424:14)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<65, true>::ap_int_base<11, false>(ap_int_base<11, false> const&)' into 'ap_int_base<11, false>::RType<64, true>::minus operator-<11, false, 64, true>(ap_int_base<11, false> const&, ap_int_base<64, true> const&)' (C:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_int_base.h:1526:341)
+INFO: [HLS 214-131] Inlining function 'ap_int<65>::ap_int<65, true>(ap_int_base<65, true> const&)' into 'ap_int_base<11, false>::RType<64, true>::minus operator-<11, false, 64, true>(ap_int_base<11, false> const&, ap_int_base<64, true> const&)' (C:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_int_base.h:1526:555)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<65, true>::ap_int_base<64, true>(ap_int_base<64, true> const&)' into 'ap_int_base<11, false>::RType<64, true>::minus operator-<11, false, 64, true>(ap_int_base<11, false> const&, ap_int_base<64, true> const&)' (C:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_int_base.h:1526:430)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<64, true>::ap_int_base(long)' into 'ap_int_base<11, false>::RType<($_0)64, true>::minus operator-<11, false>(ap_int_base<11, false> const&, long)' (C:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_int_base.h:1642:1548)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<11, false>::RType<64, true>::minus operator-<11, false, 64, true>(ap_int_base<11, false> const&, ap_int_base<64, true> const&)' into 'ap_int_base<11, false>::RType<($_0)64, true>::minus operator-<11, false>(ap_int_base<11, false> const&, long)' (C:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_int_base.h:1642:1546)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<55, true>::ap_int_base<1, false>(ap_int_base<1, false> const&)' into 'ap_int_base<1, false>::RType<54, true>::minus operator-<1, false, 54, true>(ap_int_base<1, false> const&, ap_int_base<54, true> const&)' (C:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_int_base.h:1526:341)
+INFO: [HLS 214-131] Inlining function 'ap_int<55>::ap_int<55, true>(ap_int_base<55, true> const&)' into 'ap_int_base<1, false>::RType<54, true>::minus operator-<1, false, 54, true>(ap_int_base<1, false> const&, ap_int_base<54, true> const&)' (C:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_int_base.h:1526:555)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<55, true>::ap_int_base<54, true>(ap_int_base<54, true> const&)' into 'ap_int_base<1, false>::RType<54, true>::minus operator-<1, false, 54, true>(ap_int_base<1, false> const&, ap_int_base<54, true> const&)' (C:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_int_base.h:1526:430)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<1, false>::ap_int_base(int)' into 'ap_int_base<54, true>::operator-() const' (C:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_int_base.h:925:12)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<1, false>::RType<54, true>::minus operator-<1, false, 54, true>(ap_int_base<1, false> const&, ap_int_base<54, true> const&)' into 'ap_int_base<54, true>::operator-() const' (C:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_int_base.h:925:37)
+INFO: [HLS 214-131] Inlining function 'doubleToRawBits(double)' into 'ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base(double)' (C:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_fixed_base.h:565:14)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<54, true>& ap_int_base<54, true>::operator=<55, true>(ap_int_base<55, true> const&)' into 'ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base(double)' (C:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_fixed_base.h:579:20)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<54, true>::operator-() const' into 'ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base(double)' (C:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_fixed_base.h:579:22)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<12, true>& ap_int_base<12, true>::operator=<65, true>(ap_int_base<65, true> const&)' into 'ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base(double)' (C:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_fixed_base.h:572:9)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<11, false>::RType<($_0)64, true>::minus operator-<11, false>(ap_int_base<11, false> const&, long)' into 'ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base(double)' (C:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_fixed_base.h:572:19)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>::operator!() const' into 'ap_fixed_base<17, 5, false, (ap_q_mode)5, (ap_o_mode)3, 0>& ap_fixed_base<17, 5, false, (ap_q_mode)5, (ap_o_mode)3, 0>::operator=<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' (C:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_fixed_base.h:707:9)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<17, 5, false, (ap_q_mode)5, (ap_o_mode)3, 0>& ap_fixed_base<17, 5, false, (ap_q_mode)5, (ap_o_mode)3, 0>::operator=<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'ap_fixed_base<17, 5, false, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' (C:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_fixed_base.h:440:5)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<17, 5, false, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>::RType<16, 4, false>::plus ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>::operator+<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0> const&) const' (C:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_fixed_base.h:1245:330)
+INFO: [HLS 214-131] Inlining function 'ap_ufixed<17, 5, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_ufixed<17, 5, false, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<17, 5, false, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>::RType<16, 4, false>::plus ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>::operator+<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0> const&) const' (C:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_fixed_base.h:1245:382)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<17, 5, false, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>::RType<16, 4, false>::plus ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>::operator+<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0> const&) const' (C:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_fixed_base.h:1245:342)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<17, 5, false, (ap_q_mode)5, (ap_o_mode)3, 0>::operator!() const' into 'ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>& ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>::operator=<17, 5, false, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<17, 5, false, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' (C:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_fixed_base.h:707:9)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>& ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>::operator=<17, 5, false, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<17, 5, false, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base<17, 5, false, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<17, 5, false, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' (C:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_fixed_base.h:440:5)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base<17, 5, false, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<17, 5, false, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'ap_ufixed<16, 4, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_ufixed<17, 5, false, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<17, 5, false, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' (C:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_fixed.h:239:9)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>::operator!() const' into 'ap_fixed_base<16, 1, false, (ap_q_mode)5, (ap_o_mode)3, 0>& ap_fixed_base<16, 1, false, (ap_q_mode)5, (ap_o_mode)3, 0>::operator=<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' (C:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_fixed_base.h:707:9)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<16, 1, false, (ap_q_mode)5, (ap_o_mode)3, 0>& ap_fixed_base<16, 1, false, (ap_q_mode)5, (ap_o_mode)3, 0>::operator=<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'ap_fixed_base<16, 1, false, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' (C:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_fixed_base.h:440:5)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<16, 1, false, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'ap_ufixed<16, 1, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_ufixed<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' (C:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_fixed.h:239:9)
+INFO: [HLS 214-131] Inlining function 'bool operator>=<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0> const&, int)' into 'sigmoid_plan(ap_ufixed<16, 4, (ap_q_mode)5, (ap_o_mode)3, 0>)' (Sigmoid.cpp:51:8)
+INFO: [HLS 214-131] Inlining function 'ap_ufixed<16, 1, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_ufixed<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'sigmoid_plan(ap_ufixed<16, 4, (ap_q_mode)5, (ap_o_mode)3, 0>)' (Sigmoid.cpp:56:9)
+INFO: [HLS 214-131] Inlining function 'ap_ufixed<16, 4, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_ufixed<17, 5, false, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<17, 5, false, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'sigmoid_plan(ap_ufixed<16, 4, (ap_q_mode)5, (ap_o_mode)3, 0>)' (Sigmoid.cpp:54:12)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>::RType<16, 4, false>::plus ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>::operator+<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0> const&) const' into 'sigmoid_plan(ap_ufixed<16, 4, (ap_q_mode)5, (ap_o_mode)3, 0>)' (Sigmoid.cpp:54:22)
+INFO: [HLS 214-131] Inlining function 'ap_ufixed<16, 4, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_ufixed(double)' into 'sigmoid_plan(ap_ufixed<16, 4, (ap_q_mode)5, (ap_o_mode)3, 0>)' (Sigmoid.cpp:54:24)
+INFO: [HLS 214-131] Inlining function 'ap_ufixed<16, 4, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_ufixed(int)' into 'sigmoid_plan(ap_ufixed<16, 4, (ap_q_mode)5, (ap_o_mode)3, 0>)' (Sigmoid.cpp:51:19)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>::operator>>(int) const' into 'sigmoid_plan(ap_ufixed<16, 4, (ap_q_mode)5, (ap_o_mode)3, 0>)' (Sigmoid.cpp:54:16)
+INFO: [HLS 214-131] Inlining function 'ap_ufixed<16, 4, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_ufixed<17, 5, false, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<17, 5, false, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'sigmoid_plan(ap_ufixed<16, 4, (ap_q_mode)5, (ap_o_mode)3, 0>)' (Sigmoid.cpp:53:24)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>::RType<16, 4, false>::plus ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>::operator+<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0> const&) const' into 'sigmoid_plan(ap_ufixed<16, 4, (ap_q_mode)5, (ap_o_mode)3, 0>)' (Sigmoid.cpp:53:34)
+INFO: [HLS 214-131] Inlining function 'ap_ufixed<16, 4, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_ufixed(double)' into 'sigmoid_plan(ap_ufixed<16, 4, (ap_q_mode)5, (ap_o_mode)3, 0>)' (Sigmoid.cpp:53:35)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>::operator>=(double) const' into 'sigmoid_plan(ap_ufixed<16, 4, (ap_q_mode)5, (ap_o_mode)3, 0>)' (Sigmoid.cpp:52:13)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>::operator>>(int) const' into 'sigmoid_plan(ap_ufixed<16, 4, (ap_q_mode)5, (ap_o_mode)3, 0>)' (Sigmoid.cpp:53:28)
+INFO: [HLS 214-131] Inlining function 'bool operator>=<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0> const&, int)' into 'sigmoid_plan(ap_ufixed<16, 4, (ap_q_mode)5, (ap_o_mode)3, 0>)' (Sigmoid.cpp:53:13)
+INFO: [HLS 214-131] Inlining function 'ap_ufixed<16, 4, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_ufixed<17, 5, false, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<17, 5, false, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'sigmoid_plan(ap_ufixed<16, 4, (ap_q_mode)5, (ap_o_mode)3, 0>)' (Sigmoid.cpp:52:28)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>::RType<16, 4, false>::plus ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>::operator+<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0> const&) const' into 'sigmoid_plan(ap_ufixed<16, 4, (ap_q_mode)5, (ap_o_mode)3, 0>)' (Sigmoid.cpp:52:38)
+INFO: [HLS 214-131] Inlining function 'ap_ufixed<16, 4, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_ufixed(double)' into 'sigmoid_plan(ap_ufixed<16, 4, (ap_q_mode)5, (ap_o_mode)3, 0>)' (Sigmoid.cpp:52:40)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>::operator>>(int) const' into 'sigmoid_plan(ap_ufixed<16, 4, (ap_q_mode)5, (ap_o_mode)3, 0>)' (Sigmoid.cpp:52:32)
+WARNING: [HLS 214-281] Estimating pipelined function 'sigmoid_plan' with estimated II increased from II=1 to II=+infinity because of sub function call 'call' (Sigmoid.cpp:38:0)
+INFO: [HLS 214-270] Starting automatic array partition analysis...
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.none.i16.s_struct.ap_ufixeds' into 'sigmoid_plan(ap_ufixed<16, 4, (ap_q_mode)5, (ap_o_mode)3, 0>)' (Sigmoid.cpp:56:2)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 4.382 seconds; current allocated memory: 131.080 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.024 seconds; current allocated memory: 131.081 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.117 seconds; current allocated memory: 147.523 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+WARNING: [SYNCHK 200-23] C:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_fixed_base.h:950: variable-indexed range selection may cause suboptimal QoR.
+INFO: [SYNCHK 200-10] 0 error(s), 1 warning(s).
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.222 seconds; current allocated memory: 171.778 MB.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock to (Sigmoid.cpp:56:2) in function 'sigmoid_plan'... converting 15 basic blocks.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.304 seconds; current allocated memory: 218.172 MB.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.146 seconds; current allocated memory: 222.013 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'sigmoid_plan' ...
+WARNING: [SYN 201-107] Renaming port name 'sigmoid_plan/in' to 'sigmoid_plan/in_r' to avoid the conflict with HDL keywords or other object names.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'sigmoid_plan' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining function 'sigmoid_plan'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 9, function 'sigmoid_plan'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.23 seconds; current allocated memory: 222.376 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.153 seconds; current allocated memory: 222.711 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'sigmoid_plan' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'sigmoid_plan/in_r' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'sigmoid_plan' to 'ap_ctrl_hs'.
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'sigmoid_plan' pipeline 'sigmoid_plan' pipeline type 'function pipeline'
+INFO: [RTGEN 206-100] Generating core module 'dcmp_64ns_64ns_1_3_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'sigmoid_plan'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.234 seconds; current allocated memory: 223.584 MB.
+INFO: [HLS 200-503] Applying 'config_export -vivado_clock 10', using 10 ns in generated Vivado XDC
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.914 seconds; current allocated memory: 226.281 MB.
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.327 seconds; current allocated memory: 229.483 MB.
+INFO: [VHDL 208-304] Generating VHDL RTL for sigmoid_plan.
+INFO: [VLOG 209-307] Generating Verilog RTL for sigmoid_plan.
+INFO: [HLS 200-789] **** Estimated Fmax: 403.17 MHz
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 3 seconds. CPU system time: 0 seconds. Elapsed time: 13.387 seconds; current allocated memory: 229.469 MB.
+INFO: [HLS 200-112] Total CPU user time: 5 seconds. Total CPU system time: 1 seconds. Total elapsed time: 14.901 seconds; peak allocated memory: 1018.678 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2021.1 (64-bit)
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 2.5ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7k325t-ffg676-2'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_export -vivado_clock=10
+INFO: [HLS 200-1464] Running solution command: config_export -vivado_phys_opt=all
+INFO: [HLS 200-1510] Running: set_part xc7k325t-ffg676-2 
+INFO: [HLS 200-1510] Running: create_clock -period 400MHz -name default 
+INFO: [HLS 200-1510] Running: config_export -vivado_clock 10 -vivado_phys_opt all 
+INFO: [HLS 200-1510] Running: set_directive_top -name sigmoid_plan sigmoid_plan 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.041 seconds; current allocated memory: 1018.678 MB.
+INFO: [HLS 200-10] Analyzing design file 'Sigmoid.cpp' ... 
+WARNING: [HLS 207-5301] unused parameter 'print': C:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_int_base.h:792:16
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 6.226 seconds; current allocated memory: 128.840 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 214-279] Initial Interval estimation mode is set into default.
+INFO: [HLS 214-284] Auto array partition mode is set into default.
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator!() const' into 'ap_fixed_base<44, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>& ap_fixed_base<44, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator=<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' (C:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_fixed_base.h:707:9)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<44, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>& ap_fixed_base<44, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator=<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'ap_fixed_base<44, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' (C:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_fixed_base.h:440:5)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<44, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'bool ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>::operator>=<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&) const' (C:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_fixed_base.h:1549:370)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base(int)' into 'bool operator>=<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0> const&, int)' (C:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_fixed_base.h:2274:11183)
+INFO: [HLS 214-131] Inlining function 'bool ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>::operator>=<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&) const' into 'bool operator>=<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0> const&, int)' (C:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_fixed_base.h:2274:11171)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator!() const' into 'ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>& ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>::operator=<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' (C:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_fixed_base.h:707:9)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>& ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>::operator=<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base(int)' (C:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_fixed_base.h:550:146)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base(int)' into 'ap_ufixed<16, 4, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_ufixed(int)' (C:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_fixed.h:338:60)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, false>::ap_int_base(unsigned long)' into 'ap_int_base<16, false>::countLeadingZeros() const' (C:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_int_base.h:1226:30)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<16, false>::countLeadingZeros() const' into 'ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>::to_double() const' (C:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_fixed_base.h:945:17)
+INFO: [HLS 214-131] Inlining function 'rawBitsToDouble(unsigned long long)' into 'ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>::to_double() const' (C:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_fixed_base.h:977:12)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>::to_double() const' into 'ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>::operator>=(double) const' (C:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_fixed_base.h:1560:83)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>::operator<<(unsigned int) const' into 'ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>::operator>>(int) const' (C:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_fixed_base.h:1422:14)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>::operator>>(unsigned int) const' into 'ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>::operator>>(int) const' (C:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_fixed_base.h:1424:14)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<65, true>::ap_int_base<11, false>(ap_int_base<11, false> const&)' into 'ap_int_base<11, false>::RType<64, true>::minus operator-<11, false, 64, true>(ap_int_base<11, false> const&, ap_int_base<64, true> const&)' (C:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_int_base.h:1526:341)
+INFO: [HLS 214-131] Inlining function 'ap_int<65>::ap_int<65, true>(ap_int_base<65, true> const&)' into 'ap_int_base<11, false>::RType<64, true>::minus operator-<11, false, 64, true>(ap_int_base<11, false> const&, ap_int_base<64, true> const&)' (C:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_int_base.h:1526:555)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<65, true>::ap_int_base<64, true>(ap_int_base<64, true> const&)' into 'ap_int_base<11, false>::RType<64, true>::minus operator-<11, false, 64, true>(ap_int_base<11, false> const&, ap_int_base<64, true> const&)' (C:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_int_base.h:1526:430)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<64, true>::ap_int_base(long)' into 'ap_int_base<11, false>::RType<($_0)64, true>::minus operator-<11, false>(ap_int_base<11, false> const&, long)' (C:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_int_base.h:1642:1548)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<11, false>::RType<64, true>::minus operator-<11, false, 64, true>(ap_int_base<11, false> const&, ap_int_base<64, true> const&)' into 'ap_int_base<11, false>::RType<($_0)64, true>::minus operator-<11, false>(ap_int_base<11, false> const&, long)' (C:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_int_base.h:1642:1546)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<55, true>::ap_int_base<1, false>(ap_int_base<1, false> const&)' into 'ap_int_base<1, false>::RType<54, true>::minus operator-<1, false, 54, true>(ap_int_base<1, false> const&, ap_int_base<54, true> const&)' (C:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_int_base.h:1526:341)
+INFO: [HLS 214-131] Inlining function 'ap_int<55>::ap_int<55, true>(ap_int_base<55, true> const&)' into 'ap_int_base<1, false>::RType<54, true>::minus operator-<1, false, 54, true>(ap_int_base<1, false> const&, ap_int_base<54, true> const&)' (C:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_int_base.h:1526:555)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<55, true>::ap_int_base<54, true>(ap_int_base<54, true> const&)' into 'ap_int_base<1, false>::RType<54, true>::minus operator-<1, false, 54, true>(ap_int_base<1, false> const&, ap_int_base<54, true> const&)' (C:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_int_base.h:1526:430)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<1, false>::ap_int_base(int)' into 'ap_int_base<54, true>::operator-() const' (C:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_int_base.h:925:12)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<1, false>::RType<54, true>::minus operator-<1, false, 54, true>(ap_int_base<1, false> const&, ap_int_base<54, true> const&)' into 'ap_int_base<54, true>::operator-() const' (C:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_int_base.h:925:37)
+INFO: [HLS 214-131] Inlining function 'doubleToRawBits(double)' into 'ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base(double)' (C:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_fixed_base.h:565:14)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<54, true>& ap_int_base<54, true>::operator=<55, true>(ap_int_base<55, true> const&)' into 'ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base(double)' (C:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_fixed_base.h:579:20)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<54, true>::operator-() const' into 'ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base(double)' (C:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_fixed_base.h:579:22)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<12, true>& ap_int_base<12, true>::operator=<65, true>(ap_int_base<65, true> const&)' into 'ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base(double)' (C:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_fixed_base.h:572:9)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<11, false>::RType<($_0)64, true>::minus operator-<11, false>(ap_int_base<11, false> const&, long)' into 'ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base(double)' (C:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_fixed_base.h:572:19)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>::operator!() const' into 'ap_fixed_base<17, 5, false, (ap_q_mode)5, (ap_o_mode)3, 0>& ap_fixed_base<17, 5, false, (ap_q_mode)5, (ap_o_mode)3, 0>::operator=<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' (C:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_fixed_base.h:707:9)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<17, 5, false, (ap_q_mode)5, (ap_o_mode)3, 0>& ap_fixed_base<17, 5, false, (ap_q_mode)5, (ap_o_mode)3, 0>::operator=<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'ap_fixed_base<17, 5, false, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' (C:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_fixed_base.h:440:5)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<17, 5, false, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>::RType<16, 4, false>::plus ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>::operator+<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0> const&) const' (C:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_fixed_base.h:1245:330)
+INFO: [HLS 214-131] Inlining function 'ap_ufixed<17, 5, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_ufixed<17, 5, false, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<17, 5, false, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>::RType<16, 4, false>::plus ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>::operator+<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0> const&) const' (C:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_fixed_base.h:1245:382)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<17, 5, false, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>::RType<16, 4, false>::plus ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>::operator+<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0> const&) const' (C:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_fixed_base.h:1245:342)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<17, 5, false, (ap_q_mode)5, (ap_o_mode)3, 0>::operator!() const' into 'ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>& ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>::operator=<17, 5, false, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<17, 5, false, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' (C:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_fixed_base.h:707:9)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>& ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>::operator=<17, 5, false, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<17, 5, false, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base<17, 5, false, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<17, 5, false, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' (C:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_fixed_base.h:440:5)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base<17, 5, false, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<17, 5, false, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'ap_ufixed<16, 4, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_ufixed<17, 5, false, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<17, 5, false, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' (C:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_fixed.h:239:9)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>::operator!() const' into 'ap_fixed_base<16, 1, false, (ap_q_mode)5, (ap_o_mode)3, 0>& ap_fixed_base<16, 1, false, (ap_q_mode)5, (ap_o_mode)3, 0>::operator=<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' (C:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_fixed_base.h:707:9)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<16, 1, false, (ap_q_mode)5, (ap_o_mode)3, 0>& ap_fixed_base<16, 1, false, (ap_q_mode)5, (ap_o_mode)3, 0>::operator=<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'ap_fixed_base<16, 1, false, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' (C:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_fixed_base.h:440:5)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<16, 1, false, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'ap_ufixed<16, 1, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_ufixed<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' (C:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_fixed.h:239:9)
+INFO: [HLS 214-131] Inlining function 'bool operator>=<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0> const&, int)' into 'sigmoid_plan(ap_ufixed<16, 4, (ap_q_mode)5, (ap_o_mode)3, 0>)' (Sigmoid.cpp:51:8)
+INFO: [HLS 214-131] Inlining function 'ap_ufixed<16, 1, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_ufixed<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'sigmoid_plan(ap_ufixed<16, 4, (ap_q_mode)5, (ap_o_mode)3, 0>)' (Sigmoid.cpp:56:9)
+INFO: [HLS 214-131] Inlining function 'ap_ufixed<16, 4, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_ufixed<17, 5, false, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<17, 5, false, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'sigmoid_plan(ap_ufixed<16, 4, (ap_q_mode)5, (ap_o_mode)3, 0>)' (Sigmoid.cpp:54:12)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>::RType<16, 4, false>::plus ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>::operator+<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0> const&) const' into 'sigmoid_plan(ap_ufixed<16, 4, (ap_q_mode)5, (ap_o_mode)3, 0>)' (Sigmoid.cpp:54:22)
+INFO: [HLS 214-131] Inlining function 'ap_ufixed<16, 4, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_ufixed(double)' into 'sigmoid_plan(ap_ufixed<16, 4, (ap_q_mode)5, (ap_o_mode)3, 0>)' (Sigmoid.cpp:54:24)
+INFO: [HLS 214-131] Inlining function 'ap_ufixed<16, 4, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_ufixed(int)' into 'sigmoid_plan(ap_ufixed<16, 4, (ap_q_mode)5, (ap_o_mode)3, 0>)' (Sigmoid.cpp:51:19)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>::operator>>(int) const' into 'sigmoid_plan(ap_ufixed<16, 4, (ap_q_mode)5, (ap_o_mode)3, 0>)' (Sigmoid.cpp:54:16)
+INFO: [HLS 214-131] Inlining function 'ap_ufixed<16, 4, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_ufixed<17, 5, false, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<17, 5, false, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'sigmoid_plan(ap_ufixed<16, 4, (ap_q_mode)5, (ap_o_mode)3, 0>)' (Sigmoid.cpp:53:24)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>::RType<16, 4, false>::plus ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>::operator+<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0> const&) const' into 'sigmoid_plan(ap_ufixed<16, 4, (ap_q_mode)5, (ap_o_mode)3, 0>)' (Sigmoid.cpp:53:34)
+INFO: [HLS 214-131] Inlining function 'ap_ufixed<16, 4, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_ufixed(double)' into 'sigmoid_plan(ap_ufixed<16, 4, (ap_q_mode)5, (ap_o_mode)3, 0>)' (Sigmoid.cpp:53:35)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>::operator>=(double) const' into 'sigmoid_plan(ap_ufixed<16, 4, (ap_q_mode)5, (ap_o_mode)3, 0>)' (Sigmoid.cpp:52:13)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>::operator>>(int) const' into 'sigmoid_plan(ap_ufixed<16, 4, (ap_q_mode)5, (ap_o_mode)3, 0>)' (Sigmoid.cpp:53:28)
+INFO: [HLS 214-131] Inlining function 'bool operator>=<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0> const&, int)' into 'sigmoid_plan(ap_ufixed<16, 4, (ap_q_mode)5, (ap_o_mode)3, 0>)' (Sigmoid.cpp:53:13)
+INFO: [HLS 214-131] Inlining function 'ap_ufixed<16, 4, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_ufixed<17, 5, false, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<17, 5, false, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'sigmoid_plan(ap_ufixed<16, 4, (ap_q_mode)5, (ap_o_mode)3, 0>)' (Sigmoid.cpp:52:28)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>::RType<16, 4, false>::plus ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>::operator+<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0> const&) const' into 'sigmoid_plan(ap_ufixed<16, 4, (ap_q_mode)5, (ap_o_mode)3, 0>)' (Sigmoid.cpp:52:38)
+INFO: [HLS 214-131] Inlining function 'ap_ufixed<16, 4, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_ufixed(double)' into 'sigmoid_plan(ap_ufixed<16, 4, (ap_q_mode)5, (ap_o_mode)3, 0>)' (Sigmoid.cpp:52:40)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>::operator>>(int) const' into 'sigmoid_plan(ap_ufixed<16, 4, (ap_q_mode)5, (ap_o_mode)3, 0>)' (Sigmoid.cpp:52:32)
+WARNING: [HLS 214-281] Estimating pipelined function 'sigmoid_plan' with estimated II increased from II=1 to II=+infinity because of sub function call 'call' (Sigmoid.cpp:38:0)
+INFO: [HLS 214-270] Starting automatic array partition analysis...
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.none.i16.s_struct.ap_ufixeds' into 'sigmoid_plan(ap_ufixed<16, 4, (ap_q_mode)5, (ap_o_mode)3, 0>)' (Sigmoid.cpp:56:2)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 4.391 seconds; current allocated memory: 131.080 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.024 seconds; current allocated memory: 131.081 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.118 seconds; current allocated memory: 147.523 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+WARNING: [SYNCHK 200-23] C:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_fixed_base.h:950: variable-indexed range selection may cause suboptimal QoR.
+INFO: [SYNCHK 200-10] 0 error(s), 1 warning(s).
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.231 seconds; current allocated memory: 171.778 MB.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock to (Sigmoid.cpp:56:2) in function 'sigmoid_plan'... converting 15 basic blocks.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.292 seconds; current allocated memory: 218.172 MB.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.146 seconds; current allocated memory: 222.012 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'sigmoid_plan' ...
+WARNING: [SYN 201-107] Renaming port name 'sigmoid_plan/in' to 'sigmoid_plan/in_r' to avoid the conflict with HDL keywords or other object names.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'sigmoid_plan' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining function 'sigmoid_plan'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 14, function 'sigmoid_plan'
+WARNING: [HLS 200-871] Estimated clock period (1.98075ns) exceeds the target (target clock period: 2.5ns, clock uncertainty: 0.675ns, effective delay budget: 1.825ns).
+WARNING: [HLS 200-1016] The critical path in module 'sigmoid_plan' consists of the following:	'sub' operation ('sub_ln968') [49]  (0 ns)
+	'add' operation ('add_ln968') [50]  (1.98 ns)
+
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.206 seconds; current allocated memory: 222.387 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.178 seconds; current allocated memory: 222.747 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'sigmoid_plan' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'sigmoid_plan/in_r' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'sigmoid_plan' to 'ap_ctrl_hs'.
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'sigmoid_plan' pipeline 'sigmoid_plan' pipeline type 'function pipeline'
+INFO: [RTGEN 206-100] Generating core module 'dcmp_64ns_64ns_1_4_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'lshr_16s_5ns_16_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'lshr_64ns_32ns_64_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'shl_16ns_16ns_16_3_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'shl_64ns_32ns_64_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'sigmoid_plan'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.255 seconds; current allocated memory: 223.801 MB.
+INFO: [HLS 200-503] Applying 'config_export -vivado_clock 10', using 10 ns in generated Vivado XDC
+INFO: [RTMG 210-286] Generating pipelined shifter : 'sigmoid_plan_shl_16ns_16ns_16_3_1'
+INFO: [RTMG 210-286] Generating pipelined shifter : 'sigmoid_plan_lshr_64ns_32ns_64_4_1'
+INFO: [RTMG 210-286] Generating pipelined shifter : 'sigmoid_plan_shl_64ns_32ns_64_4_1'
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 1.068 seconds; current allocated memory: 226.544 MB.
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.334 seconds; current allocated memory: 230.159 MB.
+INFO: [VHDL 208-304] Generating VHDL RTL for sigmoid_plan.
+INFO: [VLOG 209-307] Generating Verilog RTL for sigmoid_plan.
+INFO: [HLS 200-789] **** Estimated Fmax: 504.86 MHz
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 4 seconds. CPU system time: 0 seconds. Elapsed time: 13.579 seconds; current allocated memory: 230.145 MB.
+INFO: [HLS 200-112] Total CPU user time: 6 seconds. Total CPU system time: 1 seconds. Total elapsed time: 15.181 seconds; peak allocated memory: 1018.678 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2021.1 (64-bit)
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 5ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7k325t-ffg676-2'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_export -vivado_clock=10
+INFO: [HLS 200-1464] Running solution command: config_export -vivado_phys_opt=all
+INFO: [HLS 200-1510] Running: set_part xc7k325t-ffg676-2 
+INFO: [HLS 200-1510] Running: create_clock -period 200MHz -name default 
+INFO: [HLS 200-1510] Running: config_export -vivado_clock 10 -vivado_phys_opt all 
+INFO: [HLS 200-1510] Running: set_directive_top -name sigmoid_plan sigmoid_plan 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.042 seconds; current allocated memory: 1018.678 MB.
+INFO: [HLS 200-10] Analyzing design file 'Sigmoid.cpp' ... 
+WARNING: [HLS 207-5301] unused parameter 'print': C:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_int_base.h:792:16
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 6.206 seconds; current allocated memory: 128.809 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 214-279] Initial Interval estimation mode is set into default.
+INFO: [HLS 214-284] Auto array partition mode is set into default.
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator!() const' into 'ap_fixed_base<44, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>& ap_fixed_base<44, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator=<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' (C:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_fixed_base.h:707:9)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<44, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>& ap_fixed_base<44, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator=<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'ap_fixed_base<44, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' (C:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_fixed_base.h:440:5)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<44, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'bool ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>::operator>=<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&) const' (C:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_fixed_base.h:1549:370)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base(int)' into 'bool operator>=<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0> const&, int)' (C:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_fixed_base.h:2274:11183)
+INFO: [HLS 214-131] Inlining function 'bool ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>::operator>=<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&) const' into 'bool operator>=<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0> const&, int)' (C:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_fixed_base.h:2274:11171)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator!() const' into 'ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>& ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>::operator=<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' (C:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_fixed_base.h:707:9)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>& ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>::operator=<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base(int)' (C:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_fixed_base.h:550:146)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base(int)' into 'ap_ufixed<16, 4, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_ufixed(int)' (C:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_fixed.h:338:60)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, false>::ap_int_base(unsigned long)' into 'ap_int_base<16, false>::countLeadingZeros() const' (C:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_int_base.h:1226:30)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<16, false>::countLeadingZeros() const' into 'ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>::to_double() const' (C:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_fixed_base.h:945:17)
+INFO: [HLS 214-131] Inlining function 'rawBitsToDouble(unsigned long long)' into 'ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>::to_double() const' (C:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_fixed_base.h:977:12)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>::to_double() const' into 'ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>::operator>=(double) const' (C:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_fixed_base.h:1560:83)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>::operator<<(unsigned int) const' into 'ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>::operator>>(int) const' (C:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_fixed_base.h:1422:14)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>::operator>>(unsigned int) const' into 'ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>::operator>>(int) const' (C:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_fixed_base.h:1424:14)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<65, true>::ap_int_base<11, false>(ap_int_base<11, false> const&)' into 'ap_int_base<11, false>::RType<64, true>::minus operator-<11, false, 64, true>(ap_int_base<11, false> const&, ap_int_base<64, true> const&)' (C:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_int_base.h:1526:341)
+INFO: [HLS 214-131] Inlining function 'ap_int<65>::ap_int<65, true>(ap_int_base<65, true> const&)' into 'ap_int_base<11, false>::RType<64, true>::minus operator-<11, false, 64, true>(ap_int_base<11, false> const&, ap_int_base<64, true> const&)' (C:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_int_base.h:1526:555)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<65, true>::ap_int_base<64, true>(ap_int_base<64, true> const&)' into 'ap_int_base<11, false>::RType<64, true>::minus operator-<11, false, 64, true>(ap_int_base<11, false> const&, ap_int_base<64, true> const&)' (C:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_int_base.h:1526:430)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<64, true>::ap_int_base(long)' into 'ap_int_base<11, false>::RType<($_0)64, true>::minus operator-<11, false>(ap_int_base<11, false> const&, long)' (C:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_int_base.h:1642:1548)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<11, false>::RType<64, true>::minus operator-<11, false, 64, true>(ap_int_base<11, false> const&, ap_int_base<64, true> const&)' into 'ap_int_base<11, false>::RType<($_0)64, true>::minus operator-<11, false>(ap_int_base<11, false> const&, long)' (C:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_int_base.h:1642:1546)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<55, true>::ap_int_base<1, false>(ap_int_base<1, false> const&)' into 'ap_int_base<1, false>::RType<54, true>::minus operator-<1, false, 54, true>(ap_int_base<1, false> const&, ap_int_base<54, true> const&)' (C:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_int_base.h:1526:341)
+INFO: [HLS 214-131] Inlining function 'ap_int<55>::ap_int<55, true>(ap_int_base<55, true> const&)' into 'ap_int_base<1, false>::RType<54, true>::minus operator-<1, false, 54, true>(ap_int_base<1, false> const&, ap_int_base<54, true> const&)' (C:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_int_base.h:1526:555)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<55, true>::ap_int_base<54, true>(ap_int_base<54, true> const&)' into 'ap_int_base<1, false>::RType<54, true>::minus operator-<1, false, 54, true>(ap_int_base<1, false> const&, ap_int_base<54, true> const&)' (C:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_int_base.h:1526:430)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<1, false>::ap_int_base(int)' into 'ap_int_base<54, true>::operator-() const' (C:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_int_base.h:925:12)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<1, false>::RType<54, true>::minus operator-<1, false, 54, true>(ap_int_base<1, false> const&, ap_int_base<54, true> const&)' into 'ap_int_base<54, true>::operator-() const' (C:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_int_base.h:925:37)
+INFO: [HLS 214-131] Inlining function 'doubleToRawBits(double)' into 'ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base(double)' (C:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_fixed_base.h:565:14)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<54, true>& ap_int_base<54, true>::operator=<55, true>(ap_int_base<55, true> const&)' into 'ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base(double)' (C:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_fixed_base.h:579:20)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<54, true>::operator-() const' into 'ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base(double)' (C:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_fixed_base.h:579:22)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<12, true>& ap_int_base<12, true>::operator=<65, true>(ap_int_base<65, true> const&)' into 'ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base(double)' (C:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_fixed_base.h:572:9)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<11, false>::RType<($_0)64, true>::minus operator-<11, false>(ap_int_base<11, false> const&, long)' into 'ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base(double)' (C:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_fixed_base.h:572:19)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>::operator!() const' into 'ap_fixed_base<17, 5, false, (ap_q_mode)5, (ap_o_mode)3, 0>& ap_fixed_base<17, 5, false, (ap_q_mode)5, (ap_o_mode)3, 0>::operator=<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' (C:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_fixed_base.h:707:9)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<17, 5, false, (ap_q_mode)5, (ap_o_mode)3, 0>& ap_fixed_base<17, 5, false, (ap_q_mode)5, (ap_o_mode)3, 0>::operator=<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'ap_fixed_base<17, 5, false, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' (C:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_fixed_base.h:440:5)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<17, 5, false, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>::RType<16, 4, false>::plus ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>::operator+<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0> const&) const' (C:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_fixed_base.h:1245:330)
+INFO: [HLS 214-131] Inlining function 'ap_ufixed<17, 5, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_ufixed<17, 5, false, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<17, 5, false, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>::RType<16, 4, false>::plus ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>::operator+<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0> const&) const' (C:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_fixed_base.h:1245:382)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<17, 5, false, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>::RType<16, 4, false>::plus ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>::operator+<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0> const&) const' (C:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_fixed_base.h:1245:342)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<17, 5, false, (ap_q_mode)5, (ap_o_mode)3, 0>::operator!() const' into 'ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>& ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>::operator=<17, 5, false, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<17, 5, false, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' (C:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_fixed_base.h:707:9)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>& ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>::operator=<17, 5, false, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<17, 5, false, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base<17, 5, false, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<17, 5, false, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' (C:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_fixed_base.h:440:5)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base<17, 5, false, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<17, 5, false, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'ap_ufixed<16, 4, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_ufixed<17, 5, false, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<17, 5, false, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' (C:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_fixed.h:239:9)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>::operator!() const' into 'ap_fixed_base<16, 1, false, (ap_q_mode)5, (ap_o_mode)3, 0>& ap_fixed_base<16, 1, false, (ap_q_mode)5, (ap_o_mode)3, 0>::operator=<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' (C:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_fixed_base.h:707:9)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<16, 1, false, (ap_q_mode)5, (ap_o_mode)3, 0>& ap_fixed_base<16, 1, false, (ap_q_mode)5, (ap_o_mode)3, 0>::operator=<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'ap_fixed_base<16, 1, false, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' (C:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_fixed_base.h:440:5)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<16, 1, false, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'ap_ufixed<16, 1, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_ufixed<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' (C:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_fixed.h:239:9)
+INFO: [HLS 214-131] Inlining function 'bool operator>=<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0> const&, int)' into 'sigmoid_plan(ap_ufixed<16, 4, (ap_q_mode)5, (ap_o_mode)3, 0>)' (Sigmoid.cpp:51:8)
+INFO: [HLS 214-131] Inlining function 'ap_ufixed<16, 1, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_ufixed<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'sigmoid_plan(ap_ufixed<16, 4, (ap_q_mode)5, (ap_o_mode)3, 0>)' (Sigmoid.cpp:56:9)
+INFO: [HLS 214-131] Inlining function 'ap_ufixed<16, 4, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_ufixed<17, 5, false, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<17, 5, false, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'sigmoid_plan(ap_ufixed<16, 4, (ap_q_mode)5, (ap_o_mode)3, 0>)' (Sigmoid.cpp:54:12)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>::RType<16, 4, false>::plus ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>::operator+<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0> const&) const' into 'sigmoid_plan(ap_ufixed<16, 4, (ap_q_mode)5, (ap_o_mode)3, 0>)' (Sigmoid.cpp:54:22)
+INFO: [HLS 214-131] Inlining function 'ap_ufixed<16, 4, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_ufixed(double)' into 'sigmoid_plan(ap_ufixed<16, 4, (ap_q_mode)5, (ap_o_mode)3, 0>)' (Sigmoid.cpp:54:24)
+INFO: [HLS 214-131] Inlining function 'ap_ufixed<16, 4, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_ufixed(int)' into 'sigmoid_plan(ap_ufixed<16, 4, (ap_q_mode)5, (ap_o_mode)3, 0>)' (Sigmoid.cpp:51:19)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>::operator>>(int) const' into 'sigmoid_plan(ap_ufixed<16, 4, (ap_q_mode)5, (ap_o_mode)3, 0>)' (Sigmoid.cpp:54:16)
+INFO: [HLS 214-131] Inlining function 'ap_ufixed<16, 4, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_ufixed<17, 5, false, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<17, 5, false, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'sigmoid_plan(ap_ufixed<16, 4, (ap_q_mode)5, (ap_o_mode)3, 0>)' (Sigmoid.cpp:53:24)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>::RType<16, 4, false>::plus ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>::operator+<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0> const&) const' into 'sigmoid_plan(ap_ufixed<16, 4, (ap_q_mode)5, (ap_o_mode)3, 0>)' (Sigmoid.cpp:53:34)
+INFO: [HLS 214-131] Inlining function 'ap_ufixed<16, 4, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_ufixed(double)' into 'sigmoid_plan(ap_ufixed<16, 4, (ap_q_mode)5, (ap_o_mode)3, 0>)' (Sigmoid.cpp:53:35)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>::operator>=(double) const' into 'sigmoid_plan(ap_ufixed<16, 4, (ap_q_mode)5, (ap_o_mode)3, 0>)' (Sigmoid.cpp:52:13)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>::operator>>(int) const' into 'sigmoid_plan(ap_ufixed<16, 4, (ap_q_mode)5, (ap_o_mode)3, 0>)' (Sigmoid.cpp:53:28)
+INFO: [HLS 214-131] Inlining function 'bool operator>=<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0> const&, int)' into 'sigmoid_plan(ap_ufixed<16, 4, (ap_q_mode)5, (ap_o_mode)3, 0>)' (Sigmoid.cpp:53:13)
+INFO: [HLS 214-131] Inlining function 'ap_ufixed<16, 4, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_ufixed<17, 5, false, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<17, 5, false, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'sigmoid_plan(ap_ufixed<16, 4, (ap_q_mode)5, (ap_o_mode)3, 0>)' (Sigmoid.cpp:52:28)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>::RType<16, 4, false>::plus ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>::operator+<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0> const&) const' into 'sigmoid_plan(ap_ufixed<16, 4, (ap_q_mode)5, (ap_o_mode)3, 0>)' (Sigmoid.cpp:52:38)
+INFO: [HLS 214-131] Inlining function 'ap_ufixed<16, 4, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_ufixed(double)' into 'sigmoid_plan(ap_ufixed<16, 4, (ap_q_mode)5, (ap_o_mode)3, 0>)' (Sigmoid.cpp:52:40)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<16, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>::operator>>(int) const' into 'sigmoid_plan(ap_ufixed<16, 4, (ap_q_mode)5, (ap_o_mode)3, 0>)' (Sigmoid.cpp:52:32)
+WARNING: [HLS 214-281] Estimating pipelined function 'sigmoid_plan' with estimated II increased from II=1 to II=+infinity because of sub function call 'call' (Sigmoid.cpp:38:0)
+INFO: [HLS 214-270] Starting automatic array partition analysis...
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.none.i16.s_struct.ap_ufixeds' into 'sigmoid_plan(ap_ufixed<16, 4, (ap_q_mode)5, (ap_o_mode)3, 0>)' (Sigmoid.cpp:56:2)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 4.408 seconds; current allocated memory: 131.080 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.025 seconds; current allocated memory: 131.081 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.117 seconds; current allocated memory: 147.523 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+WARNING: [SYNCHK 200-23] C:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_fixed_base.h:950: variable-indexed range selection may cause suboptimal QoR.
+INFO: [SYNCHK 200-10] 0 error(s), 1 warning(s).
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.224 seconds; current allocated memory: 171.778 MB.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock to (Sigmoid.cpp:56:2) in function 'sigmoid_plan'... converting 15 basic blocks.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.27 seconds; current allocated memory: 218.172 MB.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.146 seconds; current allocated memory: 222.013 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'sigmoid_plan' ...
+WARNING: [SYN 201-107] Renaming port name 'sigmoid_plan/in' to 'sigmoid_plan/in_r' to avoid the conflict with HDL keywords or other object names.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'sigmoid_plan' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining function 'sigmoid_plan'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 7, function 'sigmoid_plan'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.2 seconds; current allocated memory: 222.373 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.161 seconds; current allocated memory: 222.699 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'sigmoid_plan' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'sigmoid_plan/in_r' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'sigmoid_plan' to 'ap_ctrl_hs'.
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'sigmoid_plan' pipeline 'sigmoid_plan' pipeline type 'function pipeline'
+INFO: [RTGEN 206-100] Generating core module 'dcmp_64ns_64ns_1_2_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'sigmoid_plan'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.227 seconds; current allocated memory: 223.502 MB.
+INFO: [HLS 200-503] Applying 'config_export -vivado_clock 10', using 10 ns in generated Vivado XDC
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.893 seconds; current allocated memory: 226.165 MB.
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 0 seconds. CPU system time: 1 seconds. Elapsed time: 0.333 seconds; current allocated memory: 229.473 MB.
+INFO: [VHDL 208-304] Generating VHDL RTL for sigmoid_plan.
+INFO: [VLOG 209-307] Generating Verilog RTL for sigmoid_plan.
+INFO: [HLS 200-789] **** Estimated Fmax: 281.48 MHz
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 3 seconds. CPU system time: 1 seconds. Elapsed time: 13.321 seconds; current allocated memory: 229.459 MB.
+INFO: [HLS 200-112] Total CPU user time: 5 seconds. Total CPU system time: 2 seconds. Total elapsed time: 14.956 seconds; peak allocated memory: 1018.678 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2021.1 (64-bit)
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 5ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7k325t-ffg676-2'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_export -vivado_clock=10
+INFO: [HLS 200-1464] Running solution command: config_export -vivado_phys_opt=all
+INFO: [HLS 200-1510] Running: set_part xc7k325t-ffg676-2 
+INFO: [HLS 200-1510] Running: create_clock -period 200MHz -name default 
+INFO: [HLS 200-1510] Running: config_export -vivado_clock 10 -vivado_phys_opt all 
+INFO: [HLS 200-1510] Running: set_directive_top -name sigmoid_plan sigmoid_plan 
+INFO: [HLS 200-1510] Running: export_design -rtl verilog -format ip_catalog 
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+INFO: [HLS 200-802] Generated output file sigmoid_new/PLAN16_16_200m/impl/export.zip
+INFO: [HLS 200-111] Finished Command export_design CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 8.982 seconds; current allocated memory: 132.935 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2021.1 (64-bit)
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 5ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7k325t-ffg676-2'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_export -vivado_clock=10
+INFO: [HLS 200-1464] Running solution command: config_export -vivado_phys_opt=all
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
+INFO: [HLS 200-1510] Running: set_part xc7k325t-ffg676-2 
+INFO: [HLS 200-1510] Running: create_clock -period 200MHz -name default 
+INFO: [HLS 200-1510] Running: config_export -format ip_catalog -rtl verilog -vivado_clock 10 -vivado_phys_opt all 
+INFO: [HLS 200-1510] Running: set_directive_top -name sigmoid_plan sigmoid_plan 
+INFO: [HLS 200-1510] Running: export_design -rtl verilog -format ip_catalog 
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+INFO: [HLS 200-802] Generated output file sigmoid_new/PLAN16_16_200m/impl/export.zip
+INFO: [HLS 200-111] Finished Command export_design CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 8.757 seconds; current allocated memory: 132.969 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2021.1 (64-bit)
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 5ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7k325t-ffg676-2'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_export -vivado_clock=10
+INFO: [HLS 200-1464] Running solution command: config_export -vivado_phys_opt=all
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
+INFO: [HLS 200-1510] Running: set_part xc7k325t-ffg676-2 
+INFO: [HLS 200-1510] Running: create_clock -period 200MHz -name default 
+INFO: [HLS 200-1510] Running: config_export -format ip_catalog -rtl verilog -vivado_clock 10 -vivado_phys_opt all 
+INFO: [HLS 200-1510] Running: set_directive_top -name sigmoid_plan sigmoid_plan 
+INFO: [HLS 200-1510] Running: export_design -rtl verilog -format ip_catalog 
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+INFO: [HLS 200-802] Generated output file sigmoid_new/PLAN16_16_200m/impl/export.zip
+INFO: [HLS 200-111] Finished Command export_design CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 8.813 seconds; current allocated memory: 132.969 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2021.1 (64-bit)
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 5ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7k325t-ffg676-2'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_export -vivado_clock=10
+INFO: [HLS 200-1464] Running solution command: config_export -vivado_phys_opt=all
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
+INFO: [HLS 200-1510] Running: set_part xc7k325t-ffg676-2 
+INFO: [HLS 200-1510] Running: create_clock -period 200MHz -name default 
+INFO: [HLS 200-1510] Running: config_export -format ip_catalog -rtl verilog -vivado_clock 10 -vivado_phys_opt all 
+INFO: [HLS 200-1510] Running: set_directive_top -name sigmoid_plan sigmoid_plan 
+INFO: [HLS 200-1510] Running: export_design -rtl verilog -format ip_catalog 
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+INFO: [HLS 200-802] Generated output file sigmoid_new/PLAN16_16_200m/impl/export.zip
+INFO: [HLS 200-111] Finished Command export_design CPU user time: 2 seconds. CPU system time: 0 seconds. Elapsed time: 8.79 seconds; current allocated memory: 132.969 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2021.1 (64-bit)
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 5ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7k325t-ffg676-2'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_export -vivado_clock=200MHz
+INFO: [HLS 200-1464] Running solution command: config_export -vivado_phys_opt=all
+INFO: [HLS 200-1510] Running: set_part xc7k325t-ffg676-2 
+INFO: [HLS 200-1510] Running: create_clock -period 200MHz -name default 
+INFO: [HLS 200-1510] Running: config_export -vivado_clock 200MHz -vivado_phys_opt all 
+INFO: [HLS 200-1510] Running: set_directive_top -name sigmoid_plan sigmoid_plan 
+INFO: [HLS 200-1510] Running: export_design -flow impl -rtl verilog -format ip_catalog 
+INFO: [HLS 200-503] Applying 'config_export -vivado_clock 200MHz', using 5 ns in generated Vivado XDC
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+INFO: [IMPL 213-8] Starting RTL evaluation using Vivado ...
+INFO: [HLS 200-802] Generated output file sigmoid_new/PLAN16_16_200m/impl/export.zip
+INFO: [HLS 200-111] Finished Command export_design CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 179.498 seconds; current allocated memory: 134.239 MB.

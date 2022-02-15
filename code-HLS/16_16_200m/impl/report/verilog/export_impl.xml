@@ -1,0 +1,153 @@
+<profile>
+  <RunData>
+    <RUN_TYPE>impl</RUN_TYPE>
+    <VIVADO_VERSION>v.2021.1</VIVADO_VERSION>
+    <ROOT_MODULE_CELL>bd_0_i/hls_inst</ROOT_MODULE_CELL>
+  </RunData>
+  <TimingReport>
+    <TargetClockPeriod>5.000</TargetClockPeriod>
+    <AchievedClockPeriod>3.049</AchievedClockPeriod>
+    <CLOCK_NAME>ap_clk</CLOCK_NAME>
+    <CP_FINAL>3.049</CP_FINAL>
+    <CP_ROUTE>3.049</CP_ROUTE>
+    <CP_SYNTH>2.314</CP_SYNTH>
+    <CP_TARGET>5.000</CP_TARGET>
+    <SLACK_FINAL>1.951</SLACK_FINAL>
+    <SLACK_ROUTE>1.951</SLACK_ROUTE>
+    <SLACK_SYNTH>2.686</SLACK_SYNTH>
+    <TIMING_MET>TRUE</TIMING_MET>
+    <TNS_FINAL>0.000</TNS_FINAL>
+    <TNS_ROUTE>0.000</TNS_ROUTE>
+    <TNS_SYNTH>0.000</TNS_SYNTH>
+    <WNS_FINAL>1.951</WNS_FINAL>
+    <WNS_ROUTE>1.951</WNS_ROUTE>
+    <WNS_SYNTH>2.686</WNS_SYNTH>
+  </TimingReport>
+  <AreaReport>
+    <Resources>
+      <BRAM>0</BRAM>
+      <CLB>0</CLB>
+      <DSP>6</DSP>
+      <FF>325</FF>
+      <LATCH>0</LATCH>
+      <LUT>351</LUT>
+      <SLICE>122</SLICE>
+      <SRL>57</SRL>
+      <URAM>0</URAM>
+    </Resources>
+    <AvailableResources>
+      <BRAM>890</BRAM>
+      <CLB>0</CLB>
+      <DSP>840</DSP>
+      <FF>407600</FF>
+      <LUT>203800</LUT>
+      <SLICE>50950</SLICE>
+      <URAM>0</URAM>
+    </AvailableResources>
+  </AreaReport>
+  <RtlModules>
+    <RtlModule CELL="inst" DEPTH="0" IS_TOP="1" TYPE="function" MODULENAME="sigmoid_top" DISPNAME="inst" RTLNAME="sigmoid_top">
+      <SubModules count="5">dcmp_64ns_64ns_1_2_no_dsp_1_U1 mul_17s_32ns_43_5_1_U2 mul_mul_15ns_15ns_30_4_1_U5 mul_mul_16ns_13ns_29_4_1_U3 mul_mul_8ns_12ns_20_4_1_U4</SubModules>
+      <Resources DSP="6" FF="325" LUT="351"/>
+      <LocalResources DSP="2" FF="234" LUT="271"/>
+    </RtlModule>
+    <RtlModule CELL="inst/dcmp_64ns_64ns_1_2_no_dsp_1_U1" BINDMODULE="sigmoid_top_dcmp_64ns_64ns_1_2_no_dsp_1" DEPTH="1" TYPE="rtl" MODULENAME="dcmp_64ns_64ns_1_2_no_dsp_1" DISPNAME="dcmp_64ns_64ns_1_2_no_dsp_1_U1" RTLNAME="sigmoid_top_dcmp_64ns_64ns_1_2_no_dsp_1">
+      <Resources FF="59" LUT="65"/>
+      <LocalResources FF="59"/>
+    </RtlModule>
+    <RtlModule CELL="inst/mul_17s_32ns_43_5_1_U2" BINDMODULE="sigmoid_top_mul_17s_32ns_43_5_1" DEPTH="1" TYPE="resource" MODULENAME="mul_17s_32ns_43_5_1" DISPNAME="mul_17s_32ns_43_5_1_U2" RTLNAME="sigmoid_top_mul_17s_32ns_43_5_1">
+      <Resources DSP="1" FF="32"/>
+      <BindNode BINDTYPE="op" BRAM="0" DISPNAME="bind_op mul" DSP="2" ID="" IMPL="auto" LATENCY="4" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_17s_32ns_43_5_1_U2" SOURCE="C:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_fixed_base.h:1246" URAM="0" VARIABLE="mul_ln1246"/>
+    </RtlModule>
+    <RtlModule CELL="inst/mul_mul_15ns_15ns_30_4_1_U5" BINDMODULE="sigmoid_top_mul_mul_15ns_15ns_30_4_1" DEPTH="1" TYPE="resource" MODULENAME="mul_mul_15ns_15ns_30_4_1" DISPNAME="mul_mul_15ns_15ns_30_4_1_U5" RTLNAME="sigmoid_top_mul_mul_15ns_15ns_30_4_1">
+      <Resources DSP="1" LUT="15"/>
+      <BindNode BINDTYPE="op" BRAM="0" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp" LATENCY="3" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_mul_15ns_15ns_30_4_1_U5" SOURCE="C:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_fixed_base.h:1171" URAM="0" VARIABLE="r_V_4"/>
+    </RtlModule>
+    <RtlModule CELL="inst/mul_mul_16ns_13ns_29_4_1_U3" BINDMODULE="sigmoid_top_mul_mul_16ns_13ns_29_4_1" DEPTH="1" TYPE="resource" MODULENAME="mul_mul_16ns_13ns_29_4_1" DISPNAME="mul_mul_16ns_13ns_29_4_1_U3" RTLNAME="sigmoid_top_mul_mul_16ns_13ns_29_4_1">
+      <Resources DSP="1"/>
+      <BindNode BINDTYPE="op" BRAM="0" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp" LATENCY="3" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_mul_16ns_13ns_29_4_1_U3" SOURCE="C:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_fixed_base.h:1171" URAM="0" VARIABLE="r_V"/>
+    </RtlModule>
+    <RtlModule CELL="inst/mul_mul_8ns_12ns_20_4_1_U4" BINDMODULE="sigmoid_top_mul_mul_8ns_12ns_20_4_1" DEPTH="1" TYPE="resource" MODULENAME="mul_mul_8ns_12ns_20_4_1" DISPNAME="mul_mul_8ns_12ns_20_4_1_U4" RTLNAME="sigmoid_top_mul_mul_8ns_12ns_20_4_1">
+      <Resources DSP="1"/>
+      <BindNode BINDTYPE="op" BRAM="0" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp" LATENCY="3" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_mul_8ns_12ns_20_4_1_U4" SOURCE="C:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_fixed_base.h:1171" URAM="0" VARIABLE="r_V_2"/>
+    </RtlModule>
+  </RtlModules>
+  <TimingPaths>
+    <TPATH DATAPATH_DELAY="2.865" DATAPATH_LOGIC_DELAY="0.463" DATAPATH_NET_DELAY="2.402" ENDPOINT_PIN="p_Result_7_reg_918_reg[39]_srl2/D" LOGIC_LEVELS="4" MAX_FANOUT="31" SLACK="1.951" STARTPOINT_PIN="sub_ln962_reg_887_reg[0]/C">
+      <CELL NAME="sub_ln962_reg_887_reg[0]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" LINE_NUMBER="72"/>
+      <CELL NAME="m_5_reg_897[5]_i_3" PRIMITIVE_TYPE="LUT.others.LUT3" LINE_NUMBER="942"/>
+      <CELL NAME="p_Result_7_reg_918_reg[47]_srl2_i_4" PRIMITIVE_TYPE="LUT.others.LUT6" LINE_NUMBER="942"/>
+      <CELL NAME="p_Result_7_reg_918_reg[39]_srl2_i_2" PRIMITIVE_TYPE="LUT.others.LUT6" LINE_NUMBER="942"/>
+      <CELL NAME="p_Result_7_reg_918_reg[39]_srl2_i_1" PRIMITIVE_TYPE="LUT.others.LUT5" LINE_NUMBER="942"/>
+      <CELL NAME="p_Result_7_reg_918_reg[39]_srl2" PRIMITIVE_TYPE="DMEM.srl.SRL16E" LINE_NUMBER="625"/>
+    </TPATH>
+    <TPATH DATAPATH_DELAY="2.852" DATAPATH_LOGIC_DELAY="0.459" DATAPATH_NET_DELAY="2.393" ENDPOINT_PIN="p_Result_7_reg_918_reg[23]_srl2/D" LOGIC_LEVELS="4" MAX_FANOUT="31" SLACK="2.055" STARTPOINT_PIN="sub_ln962_reg_887_reg[0]/C">
+      <CELL NAME="sub_ln962_reg_887_reg[0]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" LINE_NUMBER="72"/>
+      <CELL NAME="m_5_reg_897[5]_i_3" PRIMITIVE_TYPE="LUT.others.LUT3" LINE_NUMBER="942"/>
+      <CELL NAME="p_Result_7_reg_918_reg[47]_srl2_i_4" PRIMITIVE_TYPE="LUT.others.LUT6" LINE_NUMBER="942"/>
+      <CELL NAME="p_Result_7_reg_918_reg[39]_srl2_i_2" PRIMITIVE_TYPE="LUT.others.LUT6" LINE_NUMBER="942"/>
+      <CELL NAME="p_Result_7_reg_918_reg[23]_srl2_i_1" PRIMITIVE_TYPE="LUT.others.LUT5" LINE_NUMBER="942"/>
+      <CELL NAME="p_Result_7_reg_918_reg[23]_srl2" PRIMITIVE_TYPE="DMEM.srl.SRL16E" LINE_NUMBER="625"/>
+    </TPATH>
+    <TPATH DATAPATH_DELAY="2.696" DATAPATH_LOGIC_DELAY="0.459" DATAPATH_NET_DELAY="2.237" ENDPOINT_PIN="p_Result_7_reg_918_reg[7]_srl2/D" LOGIC_LEVELS="4" MAX_FANOUT="31" SLACK="2.211" STARTPOINT_PIN="sub_ln962_reg_887_reg[0]/C">
+      <CELL NAME="sub_ln962_reg_887_reg[0]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" LINE_NUMBER="72"/>
+      <CELL NAME="m_5_reg_897[5]_i_3" PRIMITIVE_TYPE="LUT.others.LUT3" LINE_NUMBER="942"/>
+      <CELL NAME="p_Result_7_reg_918_reg[47]_srl2_i_4" PRIMITIVE_TYPE="LUT.others.LUT6" LINE_NUMBER="942"/>
+      <CELL NAME="p_Result_7_reg_918_reg[39]_srl2_i_2" PRIMITIVE_TYPE="LUT.others.LUT6" LINE_NUMBER="942"/>
+      <CELL NAME="p_Result_7_reg_918_reg[7]_srl2_i_1" PRIMITIVE_TYPE="LUT.others.LUT3" LINE_NUMBER="942"/>
+      <CELL NAME="p_Result_7_reg_918_reg[7]_srl2" PRIMITIVE_TYPE="DMEM.srl.SRL16E" LINE_NUMBER="625"/>
+    </TPATH>
+    <TPATH DATAPATH_DELAY="2.703" DATAPATH_LOGIC_DELAY="0.345" DATAPATH_NET_DELAY="2.358" ENDPOINT_PIN="p_Result_7_reg_918_reg[51]_srl2/D" LOGIC_LEVELS="2" MAX_FANOUT="24" SLACK="2.213" STARTPOINT_PIN="sub_ln962_reg_887_reg[2]/C">
+      <CELL NAME="sub_ln962_reg_887_reg[2]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" LINE_NUMBER="587"/>
+      <CELL NAME="m_5_reg_897[3]_i_1" PRIMITIVE_TYPE="LUT.others.LUT6" LINE_NUMBER="942"/>
+      <CELL NAME="p_Result_7_reg_918_reg[51]_srl2_i_1" PRIMITIVE_TYPE="LUT.others.LUT6" LINE_NUMBER="942"/>
+      <CELL NAME="p_Result_7_reg_918_reg[51]_srl2" PRIMITIVE_TYPE="DMEM.srl.SRL16E" LINE_NUMBER="625"/>
+    </TPATH>
+    <TPATH DATAPATH_DELAY="2.675" DATAPATH_LOGIC_DELAY="0.440" DATAPATH_NET_DELAY="2.235" ENDPOINT_PIN="p_Result_7_reg_918_reg[32]_srl2/D" LOGIC_LEVELS="2" MAX_FANOUT="28" SLACK="2.233" STARTPOINT_PIN="sub_ln962_reg_887_reg[1]/C">
+      <CELL NAME="sub_ln962_reg_887_reg[1]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" LINE_NUMBER="587"/>
+      <CELL NAME="m_5_reg_897[0]_i_1" PRIMITIVE_TYPE="LUT.others.LUT5" LINE_NUMBER="942"/>
+      <CELL NAME="p_Result_7_reg_918_reg[32]_srl2_i_1" PRIMITIVE_TYPE="LUT.others.LUT6" LINE_NUMBER="942"/>
+      <CELL NAME="p_Result_7_reg_918_reg[32]_srl2" PRIMITIVE_TYPE="DMEM.srl.SRL16E" LINE_NUMBER="625"/>
+    </TPATH>
+  </TimingPaths>
+  <VivadoReportFiles>
+    <ReportFile TYPE="design_analysis" PATH="verilog/report/sigmoid_top_design_analysis_routed.rpt"/>
+    <ReportFile TYPE="failfast" PATH="verilog/report/sigmoid_top_failfast_routed.rpt"/>
+    <ReportFile TYPE="status" PATH="verilog/report/sigmoid_top_status_routed.rpt"/>
+    <ReportFile TYPE="timing" PATH="verilog/report/sigmoid_top_timing_routed.rpt"/>
+    <ReportFile TYPE="timing_paths" PATH="verilog/report/sigmoid_top_timing_paths_routed.rpt"/>
+    <ReportFile TYPE="utilization" PATH="verilog/report/sigmoid_top_utilization_routed.rpt"/>
+    <ReportFile TYPE="utilization_hierarchical" PATH="verilog/report/sigmoid_top_utilization_hierarchical_routed.rpt"/>
+  </VivadoReportFiles>
+  <GeneralInfo NAME="General Information">
+    <item NAME="Date" VALUE="Tue Dec 07 15:47:02 +0800 2021"/>
+    <item NAME="Version" VALUE="2021.1 (Build 3247384 on Thu Jun 10 19:36:33 MDT 2021)"/>
+    <item NAME="Project" VALUE="sigmoid_new"/>
+    <item NAME="Solution" VALUE="16_16_200m (Vivado IP Flow Target)"/>
+    <item NAME="Product family" VALUE="kintex7"/>
+    <item NAME="Target device" VALUE="xc7k325t-ffg676-2"/>
+  </GeneralInfo>
+  <RunOptions NAME="Run Constraints &amp; Options">
+    <General NAME="Design Constraints &amp; Options">
+      <item NAME="Place &amp; Route target clock" VALUE="5 ns"/>
+      <item NAME="C-Synthesis target clock" VALUE="5 ns"/>
+      <item NAME="C-Synthesis uncertainty" VALUE="27%"/>
+      <item NAME="config_export -ip_xdc_file" VALUE=""/>
+      <item NAME="config_export -ip_xdc_ooc_file" VALUE=""/>
+    </General>
+    <Syn NAME="RTL Synthesis Options">
+      <item NAME="config_export -vivado_synth_strategy" VALUE="default"/>
+      <item NAME="config_export -vivado_synth_design_args" VALUE="-directive sdx_optimization_effort_high"/>
+    </Syn>
+    <Impl NAME="Place &amp; Route Options">
+      <item NAME="config_export -vivado_impl_strategy" VALUE="default"/>
+      <item NAME="config_export -vivado_phys_opt" VALUE="all"/>
+      <item NAME="config_export -vivado_pblock" VALUE=""/>
+    </Impl>
+    <Reporting NAME="Reporting Options">
+      <item NAME="config_export -vivado_report_level" VALUE="2"/>
+      <item NAME="config_export -vivado_max_timing_paths" VALUE="10"/>
+    </Reporting>
+  </RunOptions>
+</profile>
+

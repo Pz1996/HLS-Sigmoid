@@ -1,0 +1,8 @@
+sigmoid_top_dcmp_64ns_64ns_1_2_no_dsp_1
+sigmoid_top_mul_17s_32ns_43_1_1
+sigmoid_top_mul_mul_16ns_13ns_29_4_1
+sigmoid_top_mul_mul_8ns_12ns_20_4_1
+sigmoid_top_mul_mul_15ns_15ns_30_4_1
+sigmoid_top_mul_mul_16ns_16ns_32_4_1
+sigmoid_top_ROM_EXP_V
+sigmoid_top

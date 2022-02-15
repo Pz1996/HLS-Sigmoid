@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Tue Dec  7 16:33:59 2021
+# Process ID: 1672
+# Current directory: C:/Users/Sunnyday/AppData/Roaming/Xilinx/Vitis/sigmoid_new/16_8_200m/impl/verilog
+# Command line: vivado.exe -mode batch -source run_vivado.tcl
+# Log file: C:/Users/Sunnyday/AppData/Roaming/Xilinx/Vitis/sigmoid_new/16_8_200m/impl/verilog/vivado.log
+# Journal file: C:/Users/Sunnyday/AppData/Roaming/Xilinx/Vitis/sigmoid_new/16_8_200m/impl/verilog\vivado.jou
+#-----------------------------------------------------------
+source run_vivado.tcl

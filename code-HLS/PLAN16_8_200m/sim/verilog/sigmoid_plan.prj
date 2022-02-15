@@ -1,0 +1,7 @@
+sv xil_defaultlib "ip/xil_defaultlib/sigmoid_plan_dcmp_64ns_64ns_1_2_no_dsp_1_ip.v"
+sv work "glbl.v"
+sv xil_defaultlib "sigmoid_plan.autotb.v"
+sv xil_defaultlib "sigmoid_plan.v"
+sv xil_defaultlib "sigmoid_plan_dcmp_64ns_64ns_1_2_no_dsp_1.v"
+sv xil_defaultlib "dataflow_monitor.sv"
+

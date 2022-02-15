@@ -1,0 +1,246 @@
+max error:0.023544 avg err: 0.006640
+*** SIGMOID CAL PASSED ***
+
+C:\Users\Sunnyday\AppData\Roaming\Xilinx\Vitis\sigmoid_new\PLAN\sim\verilog>set PATH= 
+
+C:\Users\Sunnyday\AppData\Roaming\Xilinx\Vitis\sigmoid_new\PLAN\sim\verilog>call C:/Xilinx/Vivado/2021.1/bin/xelab xil_defaultlib.apatb_sigmoid_plan_top glbl -Oenable_linking_all_libraries  -prj sigmoid_plan.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims_ver -L xpm  -L floating_point_v7_0_19 -L floating_point_v7_1_12 --lib "ieee_proposed=./ieee_proposed" -s sigmoid_plan  
+Vivado Simulator v2021.1
+Copyright 1986-1999, 2001-2021 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2021.1/bin/unwrapped/win64.o/xelab.exe xil_defaultlib.apatb_sigmoid_plan_top glbl -Oenable_linking_all_libraries -prj sigmoid_plan.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims_ver -L xpm -L floating_point_v7_0_19 -L floating_point_v7_1_12 --lib ieee_proposed=./ieee_proposed -s sigmoid_plan 
+Multi-threading is on. Using 10 slave threads.
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Sunnyday/AppData/Roaming/Xilinx/Vitis/sigmoid_new/PLAN/sim/verilog/ip/xil_defaultlib/sigmoid_plan_dcmp_64ns_64ns_1_2_no_dsp_1_ip.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sigmoid_plan_dcmp_64ns_64ns_1_2_no_dsp_1_ip
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Sunnyday/AppData/Roaming/Xilinx/Vitis/sigmoid_new/PLAN/sim/verilog/glbl.v" into library work
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Sunnyday/AppData/Roaming/Xilinx/Vitis/sigmoid_new/PLAN/sim/verilog/sigmoid_plan.autotb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module apatb_sigmoid_plan_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Sunnyday/AppData/Roaming/Xilinx/Vitis/sigmoid_new/PLAN/sim/verilog/sigmoid_plan.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sigmoid_plan
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Sunnyday/AppData/Roaming/Xilinx/Vitis/sigmoid_new/PLAN/sim/verilog/sigmoid_plan_dcmp_64ns_64ns_1_2_no_dsp_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sigmoid_plan_dcmp_64ns_64ns_1_2_no_dsp_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Sunnyday/AppData/Roaming/Xilinx/Vitis/sigmoid_new/PLAN/sim/verilog/dataflow_monitor.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dataflow_monitor
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package floating_point_v7_1_12.floating_point_v7_1_12_viv_comp
+Compiling package ieee.numeric_std
+Compiling package xbip_utils_v3_0_10.xbip_utils_v3_0_10_pkg
+Compiling package axi_utils_v2_0_6.axi_utils_v2_0_6_pkg
+Compiling package floating_point_v7_1_12.floating_point_v7_1_12_consts
+Compiling package ieee.math_real
+Compiling package floating_point_v7_1_12.floating_point_v7_1_12_exp_table...
+Compiling package mult_gen_v12_0_17.mult_gen_v12_0_17_pkg
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_signed
+Compiling package floating_point_v7_1_12.floating_point_v7_1_12_pkg
+Compiling package floating_point_v7_1_12.flt_utils
+Compiling package unisim.vcomponents
+Compiling package xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv_comp
+Compiling package xil_defaultlib.$unit_dataflow_monitor_sv
+Compiling architecture muxcy_v of entity unisim.MUXCY [muxcy_default]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_12.delay [\delay(width=4,length=0)\]
+Compiling architecture struct of entity floating_point_v7_1_12.carry_chain [\carry_chain(c_xdevicefamily="ki...]
+Compiling architecture synth of entity floating_point_v7_1_12.compare_eq_im [\compare_eq_im(c_xdevicefamily="...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_12.delay [\delay(width=9,length=0)\]
+Compiling architecture struct of entity floating_point_v7_1_12.carry_chain [\carry_chain(c_xdevicefamily="ki...]
+Compiling architecture synth of entity floating_point_v7_1_12.compare_ne_im [\compare_ne_im(c_xdevicefamily="...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_12.delay [\delay(width=2,length=0)\]
+Compiling architecture struct of entity floating_point_v7_1_12.carry_chain [\carry_chain(c_xdevicefamily="ki...]
+Compiling architecture synth of entity floating_point_v7_1_12.compare_eq_im [\compare_eq_im(c_xdevicefamily="...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_12.delay [\delay(width=22,length=0)\]
+Compiling architecture struct of entity floating_point_v7_1_12.carry_chain [\carry_chain(c_xdevicefamily="ki...]
+Compiling architecture synth of entity floating_point_v7_1_12.compare_eq [\compare_eq(c_xdevicefamily="kin...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_12.delay [\delay(width=32,length=0)\]
+Compiling architecture struct of entity floating_point_v7_1_12.carry_chain [\carry_chain(c_xdevicefamily="ki...]
+Compiling architecture synth of entity floating_point_v7_1_12.compare_gt [\compare_gt(c_xdevicefamily="kin...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_12.delay [\delay(width=3,length=0)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_12.delay [\delay(length=0)\]
+Compiling architecture rtl of entity floating_point_v7_1_12.fp_cmp [\fp_cmp(c_xdevicefamily="kintex7...]
+Compiling module unisims_ver.x_lut1_mux2
+Compiling module unisims_ver.LUT1
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture xilinx of entity floating_point_v7_1_12.floating_point_v7_1_12_viv [\floating_point_v7_1_12_viv(c_xd...]
+Compiling architecture xilinx of entity floating_point_v7_1_12.floating_point_v7_1_12 [\floating_point_v7_1_12(c_xdevic...]
+Compiling module xil_defaultlib.sigmoid_plan_dcmp_64ns_64ns_1_2_...
+Compiling module xil_defaultlib.sigmoid_plan_dcmp_64ns_64ns_1_2_...
+Compiling module xil_defaultlib.sigmoid_plan
+Compiling module xil_defaultlib.nodf_module_intf
+Compiling module xil_defaultlib.dataflow_monitor_1
+Compiling module xil_defaultlib.apatb_sigmoid_plan_top
+Compiling module work.glbl
+Built simulation snapshot sigmoid_plan
+
+****** Webtalk v2021.1 (64-bit)
+  **** SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+  **** IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+    ** Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/Sunnyday/AppData/Roaming/Xilinx/Vitis/sigmoid_new/PLAN/sim/verilog/xsim.dir/sigmoid_plan/webtalk/xsim_webtalk.tcl -notrace
+webtalk_transmit: Time (s): cpu = 00:00:00 ; elapsed = 00:00:12 . Memory (MB): peak = 86.480 ; gain = 4.742
+INFO: [Common 17-206] Exiting Webtalk at Mon Dec  6 19:58:57 2021...
+
+****** xsim v2021.1 (64-bit)
+  **** SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+  **** IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+    ** Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+
+source xsim.dir/sigmoid_plan/xsim_script.tcl
+# xsim {sigmoid_plan} -autoloadwcfg -tclbatch {sigmoid_plan.tcl}
+Time resolution is 1 ps
+source sigmoid_plan.tcl
+## run all
+////////////////////////////////////////////////////////////////////////////////////
+// Inter-Transaction Progress: Completed Transaction / Total Transaction
+// Intra-Transaction Progress: Measured Latency / Latency Estimation * 100%
+//
+// RTL Simulation : "Inter-Transaction Progress" ["Intra-Transaction Progress"] @ "Simulation Time"
+////////////////////////////////////////////////////////////////////////////////////
+// RTL Simulation : 0 / 128 [0.00%] @ "125000"
+// RTL Simulation : 1 / 128 [50.00%] @ "165000"
+// RTL Simulation : 2 / 128 [50.00%] @ "175000"
+// RTL Simulation : 3 / 128 [50.00%] @ "185000"
+// RTL Simulation : 4 / 128 [50.00%] @ "195000"
+// RTL Simulation : 5 / 128 [50.00%] @ "205000"
+// RTL Simulation : 6 / 128 [50.00%] @ "215000"
+// RTL Simulation : 7 / 128 [50.00%] @ "225000"
+// RTL Simulation : 8 / 128 [50.00%] @ "235000"
+// RTL Simulation : 9 / 128 [50.00%] @ "245000"
+// RTL Simulation : 10 / 128 [50.00%] @ "255000"
+// RTL Simulation : 11 / 128 [50.00%] @ "265000"
+// RTL Simulation : 12 / 128 [50.00%] @ "275000"
+// RTL Simulation : 13 / 128 [50.00%] @ "285000"
+// RTL Simulation : 14 / 128 [50.00%] @ "295000"
+// RTL Simulation : 15 / 128 [50.00%] @ "305000"
+// RTL Simulation : 16 / 128 [50.00%] @ "315000"
+// RTL Simulation : 17 / 128 [50.00%] @ "325000"
+// RTL Simulation : 18 / 128 [50.00%] @ "335000"
+// RTL Simulation : 19 / 128 [50.00%] @ "345000"
+// RTL Simulation : 20 / 128 [50.00%] @ "355000"
+// RTL Simulation : 21 / 128 [50.00%] @ "365000"
+// RTL Simulation : 22 / 128 [50.00%] @ "375000"
+// RTL Simulation : 23 / 128 [50.00%] @ "385000"
+// RTL Simulation : 24 / 128 [50.00%] @ "395000"
+// RTL Simulation : 25 / 128 [50.00%] @ "405000"
+// RTL Simulation : 26 / 128 [50.00%] @ "415000"
+// RTL Simulation : 27 / 128 [50.00%] @ "425000"
+// RTL Simulation : 28 / 128 [50.00%] @ "435000"
+// RTL Simulation : 29 / 128 [50.00%] @ "445000"
+// RTL Simulation : 30 / 128 [50.00%] @ "455000"
+// RTL Simulation : 31 / 128 [50.00%] @ "465000"
+// RTL Simulation : 32 / 128 [50.00%] @ "475000"
+// RTL Simulation : 33 / 128 [50.00%] @ "485000"
+// RTL Simulation : 34 / 128 [50.00%] @ "495000"
+// RTL Simulation : 35 / 128 [50.00%] @ "505000"
+// RTL Simulation : 36 / 128 [50.00%] @ "515000"
+// RTL Simulation : 37 / 128 [50.00%] @ "525000"
+// RTL Simulation : 38 / 128 [50.00%] @ "535000"
+// RTL Simulation : 39 / 128 [50.00%] @ "545000"
+// RTL Simulation : 40 / 128 [50.00%] @ "555000"
+// RTL Simulation : 41 / 128 [50.00%] @ "565000"
+// RTL Simulation : 42 / 128 [50.00%] @ "575000"
+// RTL Simulation : 43 / 128 [50.00%] @ "585000"
+// RTL Simulation : 44 / 128 [50.00%] @ "595000"
+// RTL Simulation : 45 / 128 [50.00%] @ "605000"
+// RTL Simulation : 46 / 128 [50.00%] @ "615000"
+// RTL Simulation : 47 / 128 [50.00%] @ "625000"
+// RTL Simulation : 48 / 128 [50.00%] @ "635000"
+// RTL Simulation : 49 / 128 [50.00%] @ "645000"
+// RTL Simulation : 50 / 128 [50.00%] @ "655000"
+// RTL Simulation : 51 / 128 [50.00%] @ "665000"
+// RTL Simulation : 52 / 128 [50.00%] @ "675000"
+// RTL Simulation : 53 / 128 [50.00%] @ "685000"
+// RTL Simulation : 54 / 128 [50.00%] @ "695000"
+// RTL Simulation : 55 / 128 [50.00%] @ "705000"
+// RTL Simulation : 56 / 128 [50.00%] @ "715000"
+// RTL Simulation : 57 / 128 [50.00%] @ "725000"
+// RTL Simulation : 58 / 128 [50.00%] @ "735000"
+// RTL Simulation : 59 / 128 [50.00%] @ "745000"
+// RTL Simulation : 60 / 128 [50.00%] @ "755000"
+// RTL Simulation : 61 / 128 [50.00%] @ "765000"
+// RTL Simulation : 62 / 128 [50.00%] @ "775000"
+// RTL Simulation : 63 / 128 [50.00%] @ "785000"
+// RTL Simulation : 64 / 128 [50.00%] @ "795000"
+// RTL Simulation : 65 / 128 [50.00%] @ "805000"
+// RTL Simulation : 66 / 128 [50.00%] @ "815000"
+// RTL Simulation : 67 / 128 [50.00%] @ "825000"
+// RTL Simulation : 68 / 128 [50.00%] @ "835000"
+// RTL Simulation : 69 / 128 [50.00%] @ "845000"
+// RTL Simulation : 70 / 128 [50.00%] @ "855000"
+// RTL Simulation : 71 / 128 [50.00%] @ "865000"
+// RTL Simulation : 72 / 128 [50.00%] @ "875000"
+// RTL Simulation : 73 / 128 [50.00%] @ "885000"
+// RTL Simulation : 74 / 128 [50.00%] @ "895000"
+// RTL Simulation : 75 / 128 [50.00%] @ "905000"
+// RTL Simulation : 76 / 128 [50.00%] @ "915000"
+// RTL Simulation : 77 / 128 [50.00%] @ "925000"
+// RTL Simulation : 78 / 128 [50.00%] @ "935000"
+// RTL Simulation : 79 / 128 [50.00%] @ "945000"
+// RTL Simulation : 80 / 128 [50.00%] @ "955000"
+// RTL Simulation : 81 / 128 [50.00%] @ "965000"
+// RTL Simulation : 82 / 128 [50.00%] @ "975000"
+// RTL Simulation : 83 / 128 [50.00%] @ "985000"
+// RTL Simulation : 84 / 128 [50.00%] @ "995000"
+// RTL Simulation : 85 / 128 [50.00%] @ "1005000"
+// RTL Simulation : 86 / 128 [50.00%] @ "1015000"
+// RTL Simulation : 87 / 128 [50.00%] @ "1025000"
+// RTL Simulation : 88 / 128 [50.00%] @ "1035000"
+// RTL Simulation : 89 / 128 [50.00%] @ "1045000"
+// RTL Simulation : 90 / 128 [50.00%] @ "1055000"
+// RTL Simulation : 91 / 128 [50.00%] @ "1065000"
+// RTL Simulation : 92 / 128 [50.00%] @ "1075000"
+// RTL Simulation : 93 / 128 [50.00%] @ "1085000"
+// RTL Simulation : 94 / 128 [50.00%] @ "1095000"
+// RTL Simulation : 95 / 128 [50.00%] @ "1105000"
+// RTL Simulation : 96 / 128 [50.00%] @ "1115000"
+// RTL Simulation : 97 / 128 [50.00%] @ "1125000"
+// RTL Simulation : 98 / 128 [50.00%] @ "1135000"
+// RTL Simulation : 99 / 128 [50.00%] @ "1145000"
+// RTL Simulation : 100 / 128 [50.00%] @ "1155000"
+// RTL Simulation : 101 / 128 [50.00%] @ "1165000"
+// RTL Simulation : 102 / 128 [50.00%] @ "1175000"
+// RTL Simulation : 103 / 128 [50.00%] @ "1185000"
+// RTL Simulation : 104 / 128 [50.00%] @ "1195000"
+// RTL Simulation : 105 / 128 [50.00%] @ "1205000"
+// RTL Simulation : 106 / 128 [50.00%] @ "1215000"
+// RTL Simulation : 107 / 128 [50.00%] @ "1225000"
+// RTL Simulation : 108 / 128 [50.00%] @ "1235000"
+// RTL Simulation : 109 / 128 [50.00%] @ "1245000"
+// RTL Simulation : 110 / 128 [50.00%] @ "1255000"
+// RTL Simulation : 111 / 128 [50.00%] @ "1265000"
+// RTL Simulation : 112 / 128 [50.00%] @ "1275000"
+// RTL Simulation : 113 / 128 [50.00%] @ "1285000"
+// RTL Simulation : 114 / 128 [50.00%] @ "1295000"
+// RTL Simulation : 115 / 128 [50.00%] @ "1305000"
+// RTL Simulation : 116 / 128 [50.00%] @ "1315000"
+// RTL Simulation : 117 / 128 [50.00%] @ "1325000"
+// RTL Simulation : 118 / 128 [50.00%] @ "1335000"
+// RTL Simulation : 119 / 128 [50.00%] @ "1345000"
+// RTL Simulation : 120 / 128 [50.00%] @ "1355000"
+// RTL Simulation : 121 / 128 [50.00%] @ "1365000"
+// RTL Simulation : 122 / 128 [50.00%] @ "1375000"
+// RTL Simulation : 123 / 128 [50.00%] @ "1385000"
+// RTL Simulation : 124 / 128 [50.00%] @ "1395000"
+// RTL Simulation : 125 / 128 [50.00%] @ "1405000"
+// RTL Simulation : 126 / 128 [50.00%] @ "1415000"
+// RTL Simulation : 127 / 128 [50.00%] @ "1425000"
+// RTL Simulation : 128 / 128 [100.00%] @ "1435000"
+////////////////////////////////////////////////////////////////////////////////////
+$finish called at time : 1495 ns : File "C:/Users/Sunnyday/AppData/Roaming/Xilinx/Vitis/sigmoid_new/PLAN/sim/verilog/sigmoid_plan.autotb.v" Line 258
+## quit
+INFO: [Common 17-206] Exiting xsim at Mon Dec  6 19:59:14 2021...
+max error:0.023544 avg err: 0.006640
+*** SIGMOID CAL PASSED ***

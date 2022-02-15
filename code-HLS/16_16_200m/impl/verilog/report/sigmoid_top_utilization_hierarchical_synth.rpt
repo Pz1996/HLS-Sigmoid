@@ -1,0 +1,42 @@
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2021.1 (win64) Build 3247384 Thu Jun 10 19:36:33 MDT 2021
+| Date         : Tue Dec  7 15:45:48 2021
+| Host         : DESKTOP-B55N7T0 running 64-bit major release  (build 9200)
+| Command      : report_utilization -hierarchical -hierarchical_depth 5 -file ./report/sigmoid_top_utilization_hierarchical_synth.rpt
+| Design       : bd_0_wrapper
+| Device       : 7k325tffg676-2
+| Design State : Synthesized
+--------------------------------------------------------------------------------------------------------------------------------------
+
+Utilization Design Information
+
+Table of Contents
+-----------------
+1. Utilization by Hierarchy
+
+1. Utilization by Hierarchy
+---------------------------
+
++----------------------------------------------------------+--------------------------------------------------------------+------------+------------+---------+------+-----+--------+--------+------------+
+|                         Instance                         |                            Module                            | Total LUTs | Logic LUTs | LUTRAMs | SRLs | FFs | RAMB36 | RAMB18 | DSP Blocks |
++----------------------------------------------------------+--------------------------------------------------------------+------------+------------+---------+------+-----+--------+--------+------------+
+| bd_0_wrapper                                             |                                                        (top) |        403 |        317 |       0 |   86 | 325 |      0 |      0 |          6 |
+|   bd_0_i                                                 |                                                         bd_0 |        403 |        317 |       0 |   86 | 325 |      0 |      0 |          6 |
+|     hls_inst                                             |                                              bd_0_hls_inst_0 |        403 |        317 |       0 |   86 | 325 |      0 |      0 |          6 |
+|       (hls_inst)                                         |                                              bd_0_hls_inst_0 |          0 |          0 |       0 |    0 |   0 |      0 |      0 |          0 |
+|       inst                                               |                                  bd_0_hls_inst_0_sigmoid_top |        403 |        317 |       0 |   86 | 325 |      0 |      0 |          6 |
+|         (inst)                                           |                                  bd_0_hls_inst_0_sigmoid_top |        309 |        223 |       0 |   86 | 234 |      0 |      0 |          2 |
+|         dcmp_64ns_64ns_1_2_no_dsp_1_U1                   |      bd_0_hls_inst_0_sigmoid_top_dcmp_64ns_64ns_1_2_no_dsp_1 |         67 |         67 |       0 |    0 |  59 |      0 |      0 |          0 |
+|           (dcmp_64ns_64ns_1_2_no_dsp_1_U1)               |      bd_0_hls_inst_0_sigmoid_top_dcmp_64ns_64ns_1_2_no_dsp_1 |          0 |          0 |       0 |    0 |  59 |      0 |      0 |          0 |
+|           sigmoid_top_dcmp_64ns_64ns_1_2_no_dsp_1_ip_u   |   bd_0_hls_inst_0_sigmoid_top_dcmp_64ns_64ns_1_2_no_dsp_1_ip |         67 |         67 |       0 |    0 |   0 |      0 |      0 |          0 |
+|         mul_17s_32ns_43_5_1_U2                           |              bd_0_hls_inst_0_sigmoid_top_mul_17s_32ns_43_5_1 |          0 |          0 |       0 |    0 |  32 |      0 |      0 |          1 |
+|         mul_mul_15ns_15ns_30_4_1_U5                      |         bd_0_hls_inst_0_sigmoid_top_mul_mul_15ns_15ns_30_4_1 |         27 |         27 |       0 |    0 |   0 |      0 |      0 |          1 |
+|           sigmoid_top_mul_mul_15ns_15ns_30_4_1_DSP48_2_U | bd_0_hls_inst_0_sigmoid_top_mul_mul_15ns_15ns_30_4_1_DSP48_2 |         27 |         27 |       0 |    0 |   0 |      0 |      0 |          1 |
+|         mul_mul_16ns_13ns_29_4_1_U3                      |         bd_0_hls_inst_0_sigmoid_top_mul_mul_16ns_13ns_29_4_1 |          0 |          0 |       0 |    0 |   0 |      0 |      0 |          1 |
+|           sigmoid_top_mul_mul_16ns_13ns_29_4_1_DSP48_0_U | bd_0_hls_inst_0_sigmoid_top_mul_mul_16ns_13ns_29_4_1_DSP48_0 |          0 |          0 |       0 |    0 |   0 |      0 |      0 |          1 |
+|         mul_mul_8ns_12ns_20_4_1_U4                       |          bd_0_hls_inst_0_sigmoid_top_mul_mul_8ns_12ns_20_4_1 |          0 |          0 |       0 |    0 |   0 |      0 |      0 |          1 |
+|           sigmoid_top_mul_mul_8ns_12ns_20_4_1_DSP48_1_U  |  bd_0_hls_inst_0_sigmoid_top_mul_mul_8ns_12ns_20_4_1_DSP48_1 |          0 |          0 |       0 |    0 |   0 |      0 |      0 |          1 |
++----------------------------------------------------------+--------------------------------------------------------------+------------+------------+---------+------+-----+--------+--------+------------+
+
+

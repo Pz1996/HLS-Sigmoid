@@ -1,0 +1,2 @@
+sigmoid_plan_dcmp_64ns_64ns_1_2_no_dsp_1
+sigmoid_plan

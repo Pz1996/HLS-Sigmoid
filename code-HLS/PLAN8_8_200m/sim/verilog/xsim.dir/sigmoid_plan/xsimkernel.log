@@ -1,0 +1,7 @@
+Running: xsim.dir/sigmoid_plan/xsimk.exe -simmode gui -wdb sigmoid_plan.wdb -simrunnum 0 -socket 52655
+Design successfully loaded
+Design Loading Memory Usage: 7604 KB (Peak: 7604 KB)
+Design Loading CPU Usage: 31 ms
+Simulation completed
+Simulation Memory Usage: 9728 KB (Peak: 9728 KB)
+Simulation CPU Usage: 46 ms
