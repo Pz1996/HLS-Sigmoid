@@ -1,2 +1,2 @@
-# Hardware-Implementation-For-Sigmoid-Function
+# HLS-Sigmoid
 A Modular Approximation Methodology for Efficient Fixed-Point Hardware Implementation of the Sigmoid Function
